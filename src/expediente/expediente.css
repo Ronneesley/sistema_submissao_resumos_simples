@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.container span{
+    font-weight: bold;
+    font-size: 30px;
+    width: 100%;
+    margin: 10px;
+}
+.orientador{
+    height: 120px;
+    width: 100%;
+    max-width: 900px;
+    background-color: #595959;
+    border-radius: 10px;
+    padding: 10px;
+}
+.orientador img{
+    height: 100%;
+    border-radius: 150px;
+    margin-left: 10px;
+}
+.turma{
+    background-color: #010326;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.turma img{
+    width: 50px;
+    border-radius: 150PX;
+}
+.turma p{
+    margin-top: 5px;
+    color: #FFF;
+    font-weight: bold;
+}
+.turma ul{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    list-style: none;
+    gap: 10px;
+    justify-content: space-between;
+
+    /* background-color: #595959; */
+    width: 100%;
+    margin: 0px 40px;
+}
+.turma li{
+    width: 70px;
+    text-align: center;
+}
