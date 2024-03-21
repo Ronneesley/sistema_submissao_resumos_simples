@@ -32,10 +32,13 @@
     border-radius: 20px;
     width: 100%;
     max-width: 600px;
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: #FFF;
+    padding: 20px;
 }
 .turma img{
     width: 50px;
@@ -52,12 +55,10 @@
     list-style: none;
     gap: 10px;
     justify-content: space-between;
-
-    /* background-color: #595959; */
     width: 100%;
-    margin: 0px 40px;
 }
 .turma li{
     width: 70px;
+    height: 70px;
     text-align: center;
 }
