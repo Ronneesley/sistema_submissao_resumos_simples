@@ -8,30 +8,30 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema evento
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema evento
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `evento` DEFAULT CHARACTER SET utf8 ;
+USE `evento` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`cursos`
+-- Table `evento`.`cursos`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`cursos` (
+CREATE TABLE IF NOT EXISTS `evento`.`cursos` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE INDEX `nome_UNIQUE` (`nome` ASC) VISIBLE)
-ENGINE = InnoDB;
+  UNIQUE INDEX `nome_UNIQUE` (`nome` ASC) VISIBLE
+) ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`autores`
+-- Table `evento`.`autores`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`autores` (
+CREATE TABLE IF NOT EXISTS `evento`.`autores` (
   `id` INT NOT NULL,
   `nome` VARCHAR(45) NULL,
   `email` VARCHAR(45) NULL,
@@ -49,16 +49,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`autores` (
   INDEX `fk_autores_cursos1_idx` (`curso` ASC) VISIBLE,
   CONSTRAINT `fk_autores_cursos1`
     FOREIGN KEY (`curso`)
-    REFERENCES `mydb`.`cursos` (`id`)
+    REFERENCES `evento`.`cursos` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`resumos`
+-- Table `evento`.`resumos`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`resumos` (
+CREATE TABLE IF NOT EXISTS `evento`.`resumos` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `titulo` VARCHAR(45) NOT NULL,
   `palavras_chave` VARCHAR(50) NOT NULL,
@@ -68,28 +68,28 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`avaliadores`
+-- Table `evento`.`avaliadores`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`avaliadores` (
+CREATE TABLE IF NOT EXISTS `evento`.`avaliadores` (
   `id` INT NOT NULL,
   `nome` VARCHAR(45) NULL,
   `email` VARCHAR(45) NULL,
   `senha` VARCHAR(32) NULL,
   `curso` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_avaliadores_cursos1_idx` (`curso` ASC) VISIBLE,
+  INDEX `fk_avaliadores_cursos1_idx` (`curso` ASC),
   CONSTRAINT `fk_avaliadores_cursos1`
     FOREIGN KEY (`curso`)
-    REFERENCES `mydb`.`cursos` (`id`)
+    REFERENCES `evento`.`cursos` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`autorias`
+-- Table `evento`.`autorias`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`autorias` (
+CREATE TABLE IF NOT EXISTS `evento`.`autorias` (
   `autor` INT NOT NULL,
   `resumo` INT NOT NULL,
   PRIMARY KEY (`autor`, `resumo`),
@@ -97,21 +97,21 @@ CREATE TABLE IF NOT EXISTS `mydb`.`autorias` (
   INDEX `fk_AUTORES_has_RESUMOS_AUTORES1_idx` (`autor` ASC) VISIBLE,
   CONSTRAINT `fk_AUTORES_has_RESUMOS_AUTORES1`
     FOREIGN KEY (`autor`)
-    REFERENCES `mydb`.`autores` (`id`)
+    REFERENCES `evento`.`autores` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_AUTORES_has_RESUMOS_RESUMOS1`
     FOREIGN KEY (`resumo`)
-    REFERENCES `mydb`.`resumos` (`id`)
+    REFERENCES `evento`.`resumos` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`avaliacoes`
+-- Table `evento`.`avaliacoes`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`avaliacoes` (
+CREATE TABLE IF NOT EXISTS `evento`.`avaliacoes` (
   `avaliador` INT NOT NULL,
   `resumo` INT NOT NULL,
   `nota` DECIMAL(3,1) NOT NULL,
@@ -120,12 +120,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`avaliacoes` (
   INDEX `fk_avaliadores_has_resumos_avaliadores1_idx` (`avaliador` ASC) VISIBLE,
   CONSTRAINT `fk_avaliadores_has_resumos_avaliadores1`
     FOREIGN KEY (`avaliador`)
-    REFERENCES `mydb`.`avaliadores` (`id`)
+    REFERENCES `evento`.`avaliadores` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_avaliadores_has_resumos_resumos1`
     FOREIGN KEY (`resumo`)
-    REFERENCES `mydb`.`resumos` (`id`)
+    REFERENCES `evento`.`resumos` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
