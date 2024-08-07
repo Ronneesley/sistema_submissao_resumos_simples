@@ -41,6 +41,9 @@
         <label>Senha</label><br />
         <input type="password" name="senha" />
         <br />
+        <label>Confirmar Senha</label><br />
+        <input type="password" name="confirmar-senha" />
+        <br />
 
         
         <br /><br />
