@@ -1,3 +1,5 @@
+<?php include("../layout_superior.php") ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,3 +18,5 @@
     </form>
 </body>
 </html>
+
+<?php include("../layout_inferior.php") ?>

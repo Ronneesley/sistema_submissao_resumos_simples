@@ -1,3 +1,5 @@
+<?php include("../layout_superior.php") ?>
+
 <?php
 
 $id = $_GET["id"];
@@ -26,3 +28,5 @@ $con->close();
 
     <input type="submit" value="Alterar" />
 </form>
+
+<?php include("../layout_inferior.php") ?>

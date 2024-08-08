@@ -1,3 +1,5 @@
+<?php include("../layout_superior.php") ?>
+
 <?php
 
 $id = $_POST["id"];
@@ -11,3 +13,5 @@ $con->close();
 echo "Alterado com sucesso!";
 
 ?>
+
+<?php include("../layout_inferior.php") ?>

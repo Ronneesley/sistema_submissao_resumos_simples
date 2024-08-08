@@ -1,3 +1,5 @@
+<?php include("../layout_superior.php") ?>
+
 <?php
 
 $con = new mysqli("localhost", "root", "", "evento");
@@ -6,6 +8,8 @@ $resultado = $con->query("select * from cursos order by nome");
 ?>
 
 <h1>Listagem de Cursos</h1>
+
+<a href="./cadastro.php">Crie um novo Curso</a>
 
 <table border="1">
     <thead>
@@ -38,3 +42,5 @@ $resultado = $con->query("select * from cursos order by nome");
 <?php
     $con->close();
 ?>
+
+<?php include("../layout_inferior.php") ?>

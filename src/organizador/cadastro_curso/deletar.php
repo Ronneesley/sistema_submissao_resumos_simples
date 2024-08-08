@@ -1,3 +1,5 @@
+<?php include("../layout_superior.php") ?>
+
 <?php
 
 $id = $_GET["id"];
@@ -9,3 +11,5 @@ $con->close();
 
 echo "Excluído com sucesso!";
 ?>
+
+<?php include("../layout_inferior.php") ?>

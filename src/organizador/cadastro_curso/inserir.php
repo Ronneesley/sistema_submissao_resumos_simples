@@ -1,3 +1,5 @@
+<?php include("../layout_superior.php") ?>
+
 <?php
 
 $nome = $_POST["nome"];
@@ -10,3 +12,5 @@ $con->close();
 echo "Salvo com sucesso!";
 
 ?>
+
+<?php include("../layout_inferior.php") ?>
