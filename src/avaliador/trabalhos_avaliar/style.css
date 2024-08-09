@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3cdcd;
+}
+hr{
+    width: 98%;
+}
+.container {
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #d3cdcd;
+}
+.titulo{
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+}
+.user{
+    float: right;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+.user img{
+    background-color: #000;
+    border-radius: 35px;
+    float: right; /* alinha imagem para a direita  */
+    margin: 25px;
+}
+.user button{
+    padding: 0;
+    font-size: 13px;
+    margin: 45px 0;
+    background-color: #000;
+    color: #fff;
+    border: #000; /* borda da pagina ou de alguma div */
+}
+button:hover{
+    cursor: pointer;
+}
+.seta img{
+    background-color: #fff; /* muda a cor do fundo */
+    border-radius: 25px; /* deix borda redonda */
+    padding: 7px;
+}
+figure{
+    float: left; /* alinhamento da imagem para esquerda */
+    background-color: #000;
+    margin: 25px;
+    padding: 9px;
+}
+a:hover{
+    cursor: auto; /* mudar formato do cursor */
+}
+h1{
+    text-align: justify;
+    color: #fff;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #d3cdcd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} 
+li:hover {
+    background-color: #8d8989;
+    cursor: pointer;
+}
+  
