@@ -13,7 +13,7 @@
         <img src="../../imagens/curso.png" alt="Cadastro de Curso">
         Cadastro de Curso
     </a>
-    <a href="../cadastro_resumos" class="shortcut">
+    <a href="../cadastro_resumo" class="shortcut">
         <img src="../../imagens/resumo.png" alt="Cadastro de Resumos">
         Cadastro de Resumos
     </a>

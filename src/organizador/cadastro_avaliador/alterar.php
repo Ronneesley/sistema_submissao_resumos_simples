@@ -1,3 +1,5 @@
+<?php include("../layout_superior.php") ?>
+
 <?php
 $id = $_POST["id"];
 $nome = $_POST["nome"];
@@ -18,3 +20,4 @@ $con->close();
 echo "Avaliador Alterado com Sucesso !";
 ?>
 
+<?php include("../layout_inferior.php") ?>

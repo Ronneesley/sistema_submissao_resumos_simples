@@ -1,3 +1,5 @@
+<?php include("../layout_superior.php") ?>
+
 <?php
 
 $id = $_POST["id"];
@@ -30,3 +32,5 @@ if ($con->query($sql) === TRUE) {
 
 $con->close();
 ?>
+
+<?php include("../layout_inferior.php") ?>

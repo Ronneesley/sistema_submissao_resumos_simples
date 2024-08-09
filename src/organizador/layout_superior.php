@@ -77,7 +77,7 @@
             <a href="../cadastro_autor">Cadastro de Autores</a>
             <a href="../cadastro_avaliador">Cadastro de Avaliadores</a>
             <a href="../cadastro_curso">Cadastro de Curso</a>
-            <a href="../cadastro_resumos">Cadastro de Resumos</a>
+            <a href="../cadastro_resumo">Cadastro de Resumos</a>
         </div>
 
         <div class="main-content">
