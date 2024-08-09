@@ -1,3 +1,3 @@
 Login do Organizador
 
-<a href="dashboard.php">Entrar</a>
+<a href="dashboard/dashboard.php">Entrar</a>

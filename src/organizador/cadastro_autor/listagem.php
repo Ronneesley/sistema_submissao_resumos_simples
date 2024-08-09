@@ -1,10 +1,12 @@
+<?php include("../layout_superior.php") ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de autores</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="listagem.css">
 </head>
 <body>
 <?php
@@ -36,7 +38,7 @@ $resultado = $con->query("select * from autores order by nome");
                 <input type="text" placeholder="Nº Trabalhos">
                 <input type="text" placeholder="Status">
                 <button>Pesquisar</button>
-                <button>Incluir Usuário</button>
+                <a href="cadastro.php">Incluir</a>
             </div>
             <div class="results">
                 <table>
@@ -91,3 +93,5 @@ $resultado = $con->query("select * from autores order by nome");
     </div>
 </body>
 </html>
+
+<?php include("../layout_inferior.php") ?>

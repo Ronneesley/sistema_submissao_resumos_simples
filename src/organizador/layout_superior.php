@@ -72,10 +72,12 @@
     <body>
         <div class="sidebar">
             <h2>Menu</h2>
-            <a href="./cadastro_autor">Cadastro de Autores</a>
-            <a href="./cadastro_avaliador">Cadastro de Avaliadores</a>
-            <a href="./cadastro_curso">Cadastro de Curso</a>
-            <a href="./cadastro_resumos">Cadastro de Resumos</a>
+            <a href="../dashboard">Dashboard</a>
+
+            <a href="../cadastro_autor">Cadastro de Autores</a>
+            <a href="../cadastro_avaliador">Cadastro de Avaliadores</a>
+            <a href="../cadastro_curso">Cadastro de Curso</a>
+            <a href="../cadastro_resumos">Cadastro de Resumos</a>
         </div>
 
         <div class="main-content">
