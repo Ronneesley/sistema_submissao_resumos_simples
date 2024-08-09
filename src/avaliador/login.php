@@ -1,3 +1,3 @@
 Login do Avaliador
 
-<a href="painel.php">Entrar</a>
+<a href="trabalhos_avaliar/listagem.php">Entrar</a>
