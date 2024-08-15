@@ -49,8 +49,8 @@ INSERT INTO autorias (`autor`, `resumo`) VALUES (4, 4);
 INSERT INTO autorias (`autor`, `resumo`) VALUES (5, 5);
 
 -- Cadastrado Avaliações
-INSERT INTO `avaliacoes` (`avaliador`, `resumo`, `nota`) VALUES ('1', '1', '10');
-INSERT INTO `avaliacoes` (`avaliador`, `resumo`, `nota`) VALUES ('2', '2', '9.5');
-INSERT INTO `avaliacoes` (`avaliador`, `resumo`, `nota`) VALUES ('3', '3', '8');
-INSERT INTO `avaliacoes` (`avaliador`, `resumo`, `nota`) VALUES ('4', '4', '7.8');
-INSERT INTO `avaliacoes` (`avaliador`, `resumo`, `nota`) VALUES ('5', '5', '6.9');
+INSERT INTO `avaliacoes` (`avaliador`, `resumo`, `nota`) VALUES (1, 1, 10);
+INSERT INTO `avaliacoes` (`avaliador`, `resumo`, `nota`) VALUES (2, 2, 9.5);
+INSERT INTO `avaliacoes` (`avaliador`, `resumo`, `nota`) VALUES (3, 3, 8);
+INSERT INTO `avaliacoes` (`avaliador`, `resumo`, `nota`) VALUES (4, 4, 7.8);
+INSERT INTO `avaliacoes` (`avaliador`, `resumo`, `nota`) VALUES (5, 5, 6.9);
