@@ -68,6 +68,8 @@
                 margin-bottom: 10px;
             }
         </style>
+
+        <link rel="stylesheet" href="../../css/listagem.css" />
     </head>
     <body>
         <div class="sidebar">
