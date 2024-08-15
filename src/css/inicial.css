@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: inter;
     src: url(../fontes/Inter_18pt-Bold.ttf);
@@ -9,16 +8,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: inter;
     background-color: #cecece;
 }
+
 .inicio{
     background-color: #010326;
     color: #fff;
     text-align: center;
     padding: 2%;
 }
+
 h1{
     font-size: 36px;
     padding: 1%;
@@ -37,6 +39,7 @@ p{
     display: flex;
     justify-content: space-between; 
 }
+
 .item{
     display: flex;
     flex-direction: column;
@@ -44,12 +47,14 @@ p{
     text-align: center;   
     margin: 10%;  
 }
+
 img{
     max-width: 100%; 
     height: auto;  
     margin-bottom: 10px;
     margin-top: 25%;
 }
+
 button{
     background-color: #1E2A38;
     color: #fff;
