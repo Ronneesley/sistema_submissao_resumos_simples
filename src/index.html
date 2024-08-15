@@ -1,85 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSRS - Sistema de Submissão de Resumos Simples</title>
+    <title>Pagina Inicial</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        
-        .container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        .option {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 150px;
-            padding: 20px;
-            border: 2px solid #ddd;
-            border-radius: 15px;
-            text-align: center;
-            cursor: pointer;
-            transition: background-color 0.3s, border-color 0.3s;
-        }
-        .option:hover {
-            background-color: #f0f0f0;
-            border-color: #888;
-        }
-        .option img {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 10px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-
-        @font-face {
-            font-family: inter;
-            src: url(fontes/Inter_18pt-Bold.ttf);
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-family: inter;
-        }
+        @import url(css/inicial.css);
     </style>
-    <script>
-        function navigateTo(role) {
-            window.location.href = role + "/login.php";
-        }
-    </script>
 </head>
 <body>
-    <h1>SSRS - Sistema de Submissão de Resumos Simples</h1>
+    <div class="logo">
+        <img src="imagens/logo.png" alt="logo" width="100" height="100">
+    </div>
 
-    <p style="text-align:center; font-size: 1.2em;">Escolha quem você é e vamos começar!</p>
-    <div class="container">
-        <div class="option" onclick="navigateTo('autor')">
-            <img src="imagens/autor.png" alt="Autor">
-            <label for="autor">Autor</label>
+    <div class="inicio">
+        <h1>SSRS</h1>
+        <h2>Sistema de Relatório e Avaliação</h2>
+        <p>Bem-vindo ao SSRS! para começar por favor, selecione seus papel abaixo</p>
+    </div>
+
+    <div class="opcao">
+        <div class="item" onclick="navigateTo('autor')">
+            <img src="imagens/01.svg" alt="autor" width="150" height="150">
+            <button>Autor</button>
         </div>
-        <div class="option" onclick="navigateTo('avaliador')">
-            <img src="imagens/avaliador.png" alt="Avaliador">
-            <label for="avaliador">Avaliador</label>
+        <div class="item" onclick="navigateTo('avaliador')">
+            <img src="imagens/02.svg" alt="avaliador" width="150" height="150">
+            <button>Avaliador</button>
         </div>
-        <div class="option" onclick="navigateTo('organizador')">
-            <img src="imagens/organizador.png" alt="Organizador">
-            <label for="organizador">Organizador</label>
+        <div class="item" onclick="navigateTo('organizador')">
+            <img src="imagens/03.svg" alt="organizador" width="150" height="150">
+            <button>organizador</button>
         </div>
     </div>
+
+    <script>
+        function navigateTo(role){
+            window.location.href = role + "./login.php"
+        }
+    </script>
+
 </body>
 </html>
