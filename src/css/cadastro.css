@@ -1,0 +1,17 @@
+div.campo {
+    margin-bottom: 10px;
+}
+
+div.campo label {
+    display: block;
+    font-size: 12px;
+}
+
+div.campo input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+div.campo input:hover {
+    background-color: lightgray;
+}
