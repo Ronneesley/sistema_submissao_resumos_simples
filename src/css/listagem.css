@@ -1,0 +1,18 @@
+table.listagem {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+table.listagem thead tr {
+    background-color: beige;
+}
+
+table.listagem thead tr th {
+    padding: 5px;
+}
+
+table.listagem tbody tr:hover {
+    background-color: gray;
+    cursor: pointer;
+}

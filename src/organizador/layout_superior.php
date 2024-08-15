@@ -68,6 +68,9 @@
                 margin-bottom: 10px;
             }
         </style>
+
+        <link rel="stylesheet" href="../../css/listagem.css" />
+        <link rel="stylesheet" href="../../css/cadastro.css" />
     </head>
     <body>
         <div class="sidebar">

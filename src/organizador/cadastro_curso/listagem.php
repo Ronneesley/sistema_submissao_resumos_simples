@@ -11,7 +11,7 @@ $resultado = $con->query("select * from cursos order by nome");
 
 <a href="./cadastro.php">Crie um novo Curso</a>
 
-<table border="1">
+<table class="listagem">
     <thead>
         <tr>
             <th>ID</th>

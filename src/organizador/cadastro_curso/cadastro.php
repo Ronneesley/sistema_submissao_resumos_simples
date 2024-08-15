@@ -10,9 +10,10 @@
     <h1>Cadastro de Curso</h1>
 
     <form method="post"  action="inserir.php">
-        <label>Nome</label><br />
-        <input type="text" name="nome" />
-        <br /><br />
+        <div class="campo">
+            <label>Nome</label>
+            <input type="text" name="nome" />
+        </div>
 
         <input type="submit" value="Salvar" />
     </form>
