@@ -86,6 +86,7 @@
             <a href="../cadastro_avaliador">Cadastro de Avaliadores</a>
             <a href="../cadastro_curso">Cadastro de Curso</a>
             <a href="../cadastro_resumo">Cadastro de Resumos</a>
+            <a href="../logout.php">Sair</a>
         </div>
 
         <div class="main-content">
