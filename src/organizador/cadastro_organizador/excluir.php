@@ -2,7 +2,7 @@
 
 $conn = new mysqli("localhost", "root", "", "evento");
 
-$id = $_POST['id'];
+$id = $_GET['id'];
 
 if (is_numeric($id)) {
     $sql = "DELETE FROM organizadores WHERE id = ?";
