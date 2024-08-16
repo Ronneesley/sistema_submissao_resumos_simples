@@ -1,3 +1,4 @@
+
 <?php include("../layout_superior.php") ?>
 
 <?php
@@ -9,7 +10,12 @@ $resultado = $con->query("select * from cursos order by nome");
 
 <h1>Listagem de Cursos</h1>
 
-<a href="./cadastro.php">Crie um novo Curso</a>
+<input type="text" id="nome" placeholder="Pesquisar" required>
+
+<div class="criar">
+    <a href="./cadastro.php">Crie um novo Curso</a>
+</div>
+
 
 <table class="listagem">
     <thead>
