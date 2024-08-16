@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    $nome = $_SESSION["nome"];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
@@ -85,4 +90,8 @@
 
         <div class="main-content">
             <div class="title">SSRS - Sistema de Submissão de Resumos Simples</div>
+
+            <?php
+                echo $nome;
+            ?>
         

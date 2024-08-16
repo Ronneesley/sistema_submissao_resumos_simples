@@ -55,18 +55,23 @@
             color: #ffffff;
         }
     </style>
+
+    <script src="../js/validacao_login.js"></script>
 </head>
 <body>
     <div class="login-form">
         <img src="SSR.png" alt="Logo">
-        <h2>SISTEMA DE SUBMISSÃO DE RESUMOS</h2>
-        <input type="text" id="email" placeholder="Email" required>
-        <input type="password" id="senha" placeholder="Senha" required>
-        <p><a href="#">Esqueci minha senha</a></p>
-        <button type="submit" onClick='entrar()'>ENTRAR</button>
-        <button type="submit">CADASTRAR</button>
-    </div>
 
-    <script src="./index.js"></script>
+        <h2>SISTEMA DE SUBMISSÃO DE RESUMOS</h2>
+
+        <form method="post" action="logar.php" onsubmit="return validar();">
+            <input type="text" id="email" name="email" placeholder="Email" required />
+            <input type="password" id="senha" name="senha" placeholder="Senha" required />
+
+            <p><a href="#">Esqueci minha senha</a></p>
+
+            <button type="submit">ENTRAR</button>
+        </form>
+    </div>
 </body>
 </html>

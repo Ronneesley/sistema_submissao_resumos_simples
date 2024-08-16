@@ -11,6 +11,7 @@ INSERT INTO organizadores (`id`, `nome`, `login`, `senha`, `data_cadastro`, `ema
 INSERT INTO organizadores (`id`, `nome`, `login`, `senha`, `data_cadastro`, `email`) VALUES ('3', 'Carlos', 'teste', md5(12355), '2023-05-10', 'carlosn@gmail.com');
 INSERT INTO organizadores (`id`, `nome`, `login`, `senha`, `data_cadastro`, `email`) VALUES ('4', 'Jeova', 'teste', md5(1239798), '2022-01-09', 'jeova@gmail.com');
 INSERT INTO organizadores (`id`, `nome`, `login`, `senha`, `data_cadastro`, `email`) VALUES ('5', 'Jailson', 'teste', md5(123345), '2021-04-06', 'jailson@gmail.com');
+INSERT INTO organizadores (`id`, `nome`, `login`, `senha`, `data_cadastro`, `email`) VALUES ('6', 'Ronneesley Moura Teles', 'ronneesley', md5('123'), '2021-04-06', 'ronneesley@gmail.com');
 
 -- Cadastrado Autores
 INSERT INTO autores (`id`, `nome`, `email`, `cpf`, `instituicao_ensino`, `senha`, `curso`) VALUES ('1', 'thallison', 'thallison@gmail.com', '11111111111', 'Campus Colinas', md5(123), 1);
