@@ -93,6 +93,8 @@ CREATE TABLE IF NOT EXISTS `evento`.`avaliadores` (
   `senha` VARCHAR(32) NULL,
   `curso` INT NOT NULL,
   `formacao` VARCHAR(45) NULL,
+   `telefone` VARCHAR(14) NOT NULL,
+  
   PRIMARY KEY (`id`),
   INDEX `fk_avaliadores_cursos1_idx` (`curso` ASC) ,
   CONSTRAINT `fk_avaliadores_cursos1`
