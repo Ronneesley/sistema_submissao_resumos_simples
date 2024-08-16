@@ -22,10 +22,10 @@ INSERT INTO autores (`id`, `nome`, `email`, `cpf`, `instituicao_ensino`, `senha`
 
 -- Cadastrado Avaliadores
 INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`) VALUES (1, 'carol', 'carol@gmail.com', md5(123), 1, 'Graduada','(63)99165-2222');
-INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`) VALUES (2, 'thaisa', 'thaisa@gmail.com', md5(1234), 2, 'Superior''(63)99165-4444');
-INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`) VALUES (3, 'monalisa', 'monalisa@gmail.com', md5(12345), 3, 'Tecnico''(63)99165-2222');
-INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`) VALUES (4, 'beatriz', 'beatriz@gmail.com', md5(123456), 4, 'Mestrado''(63)99165-7777');
-INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`) VALUES (5, 'ronneesley', 'ronneesley@gmail.com', md5(1234567), 5, 'Doutorado''(63)99165-0000');
+INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`) VALUES (2, 'thaisa', 'thaisa@gmail.com', md5(1234), 2, 'Superior','(63)99165-4444');
+INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`) VALUES (3, 'monalisa', 'monalisa@gmail.com', md5(12345), 3, 'Tecnico','(63)99165-2222');
+INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`) VALUES (4, 'beatriz', 'beatriz@gmail.com', md5(123456), 4, 'Mestrado','(63)99165-7777');
+INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`) VALUES (5, 'ronneesley', 'ronneesley@gmail.com', md5(1234567), 5, 'Doutorado','(63)99165-0000');
 
 -- Cadastrado Eixos tematicos
 insert into eixos_tematicos(id, nome) values(1, 'Questões sociais');
