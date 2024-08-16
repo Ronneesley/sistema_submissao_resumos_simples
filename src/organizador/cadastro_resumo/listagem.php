@@ -87,6 +87,18 @@
     </style>
 </head>
 <body>
+<?php
+// query("select * from resumos");
+$con = new mysqli("localhost", "root", "", "evento");
+$query = "
+    SELECT resumos.*, autores.nome AS autor_nome, avaliadores.nome AS avaliador_nome
+    FROM resumos
+    JOIN autores ON resumos.id = autores.id
+    JOIN avaliadores ON resumos.id = avaliadores.id";
+
+$resultado = $con->query($query);
+
+?>
     <div class="container">
         <div class="header">
             <h1>Listagem de Resumos Enviados</h1>
@@ -96,7 +108,6 @@
             <input type="text" placeholder="Buscar por título">
             <input type="text" placeholder="Buscar por autor">
             <input type="text" placeholder="Buscar por avaliador">
-            <input type="text" placeholder="Buscar por evento">
             <select>
                 <option value="">Filtrar Status</option>
                 <option value="pendente">Pendente</option>
@@ -113,44 +124,20 @@
                     <th>Título</th>
                     <th>Autor</th>
                     <th>Avaliador</th>
-                    <th>Evento</th>
                     <th>Status</th>
                 </tr>
+                <?php
+                    while ($linha = $resultado->fetch_object()){
+                ?>
                 <tr>
-                    <td>Aplicação de Paisagem de Drones</td>
-                    <td>João Fernandes</td>
-                    <td>Encontro de Licenciaturas</td>
-                    <td>Encontro de Licenciaturas</td>
+                    <td><?=$linha->titulo?></td>
+                    <td><?=$linha->autor_nome?></td>
+                    <td><?=$linha->avaliador_nome?></td>
                     <td>Pendente</td>
                 </tr>
-                <tr>
-                    <td>Vantagens do Código Limpo</td>
-                    <td>Maria Silva</td>
-                    <td>Encontro de Licenciaturas</td>
-                    <td>INFO Summit</td>
-                    <td>Enviado</td>
-                </tr>
-                <tr>
-                    <td>Inteligência Artificial em Saúde</td>
-                    <td>Pedro Almeida</td>
-                    <td>Aplicação de Softwares</td>
-                    <td>HPC Summit</td>
-                    <td>Reprovado</td>
-                </tr>
-                <tr>
-                    <td>Uso de IA para Previsão de Demandas</td>
-                    <td>Ana Costa</td>
-                    <td>IA em Logística</td>
-                    <td>IA Conference</td>
-                    <td>Aprovado</td>
-                </tr>
-                <tr>
-                    <td>Segurança de Sistemas na Era Digital</td>
-                    <td>Carlos Santos</td>
-                    <td>Segurança de Sistemas</td>
-                    <td>Security Conference</td>
-                    <td>Em Correção</td>
-                </tr>
+                <?php
+                    }
+                ?>
             </table>
         </div>
     </div>
