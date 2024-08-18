@@ -55,3 +55,17 @@ INSERT INTO avaliacoes (`avaliador`, `resumo`, `nota`) VALUES (2, 2, 9.5);
 INSERT INTO avaliacoes (`avaliador`, `resumo`, `nota`) VALUES (3, 3, 8);
 INSERT INTO avaliacoes (`avaliador`, `resumo`, `nota`) VALUES (4, 4, 7.8);
 INSERT INTO avaliacoes (`avaliador`, `resumo`, `nota`) VALUES (5, 5, 6.9);
+
+--  cadastro eventos
+
+INSERT INTO eventos(`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `contato`)
+VALUES('Congresso de Tecnologia', 'banner_tecnologia.jpg', 'Congresso sobre inovações tecnológicas.', '2024-09-01', '2024-09-03', '2024-08-01', '2024-08-25', 'tecnologia@evento.com');
+INSERT INTO eventos(`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `contato`)
+VALUES('Simpósio de Medicina', 'banner_medicina.jpg', 'Simpósio com foco em avanços médicos.', '2024-10-10', '2024-10-12', '2024-09-01', '2024-09-30', 'medicina@evento.com');
+INSERT INTO eventos (`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `contato`)
+VALUES('Seminário de Educação', 'banner_educacao.jpg', 'Discussões sobre novos métodos educacionais.', '2024-11-15', '2024-11-17', '2024-10-01', '2024-10-31', 'educacao@evento.com');
+INSERT INTO eventos (`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `contato`)
+VALUES('Fórum de Sustentabilidade', 'banner_sustentabilidade.jpg', 'Evento focado em práticas sustentáveis.', '2024-12-05', '2024-12-07', '2024-11-01', '2024-11-30', 'sustentabilidade@evento.com');
+INSERT INTO eventos(`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `contato`)
+VALUES('Encontro de Engenharias', 'banner_engenharia.jpg', 'Encontro sobre inovações em engenharia.', '2024-08-20', '2024-08-22', '2024-07-01', '2024-07-31', 'engenharia@evento.com');
+
