@@ -58,19 +58,19 @@ INSERT INTO avaliacoes (`avaliador`, `resumo`, `nota`) VALUES (5, 5, 6.9);
 
 --  cadastro eventos
 
-INSERT INTO eventos (`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `telefone`, `local`, `video`, `horario_inicio`, `horario_fim`, `fim_correcao_trabalho`)
+INSERT INTO eventos (`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `telefone`, `criado_em`, `local`, `video`, `horario_inicio`, `horario_fim`, `fim_correcao_trabalho`)
 VALUES 
-('Conferência de Tecnologia 2024', 'banner1.jpg', 'Uma conferência sobre as últimas tendências em tecnologia.', '2024-09-15', '2024-09-17', '2024-08-01', '2024-08-31', '(11) 99999-9999', 'Campus Colinas', 'video1.mp4', '09:00', '17:00', '2024-09-10');
-INSERT INTO eventos (`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `telefone`, `local`, `video`, `horario_inicio`, `horario_fim`, `fim_correcao_trabalho`)
+('Conferência de Tecnologia 2024', 'banner1.jpg', 'Uma conferência sobre as últimas tendências em tecnologia.', '2024-09-15', '2024-09-17', '2024-08-01', '2024-08-31', '(11) 99999-9999',now(), 'Campus Colinas', 'video1.mp4', '09:00', '17:00', '2024-09-10');
+INSERT INTO eventos (`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `telefone`,`criado_em`, `local`, `video`, `horario_inicio`, `horario_fim`, `fim_correcao_trabalho`)
 VALUES
-('Simpósio de Ciências 2024', 'banner2.jpg', 'Um simpósio que explora avanços recentes em várias áreas da ciência.', '2024-10-05', '2024-10-07', '2024-09-01', '2024-09-25', '(21) 98888-8888', 'Campus Guarai', 'video2.mp4', '10:00', '18:00', '2024-09-30');
-INSERT INTO eventos (`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `telefone`, `local`, `video`, `horario_inicio`, `horario_fim`, `fim_correcao_trabalho`)
+('Simpósio de Ciências 2024', 'banner2.jpg', 'Um simpósio que explora avanços recentes em várias áreas da ciência.', '2024-10-05', '2024-10-07', '2024-09-01', '2024-09-25', '(21) 98888-8888',now(), 'Campus Guarai', 'video2.mp4', '10:00', '18:00', '2024-09-30');
+INSERT INTO eventos (`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `telefone`, `criado_em`,`local`, `video`, `horario_inicio`, `horario_fim`, `fim_correcao_trabalho`)
 VALUES
-('Workshop de Inovação 2024', 'banner3.jpg', 'Um workshop focado em inovação e empreendedorismo.', '2024-11-20', '2024-11-21', '2024-10-01', '2024-10-31', '(31) 97777-7777', 'Belo Horizonte - MG', 'Campus Tocantins', '08:00', '16:00', '2024-11-15');
-INSERT INTO eventos (`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `telefone`, `local`, `video`, `horario_inicio`, `horario_fim`, `fim_correcao_trabalho`)
+('Workshop de Inovação 2024', 'banner3.jpg', 'Um workshop focado em inovação e empreendedorismo.', '2024-11-20', '2024-11-21', '2024-10-01', '2024-10-31', '(31) 97777-7777',now(), 'Belo Horizonte - MG', 'Campus Tocantins', '08:00', '16:00', '2024-11-15');
+INSERT INTO eventos (`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `telefone`,`criado_em`, `local`, `video`, `horario_inicio`, `horario_fim`, `fim_correcao_trabalho`)
 VALUES
-('Seminário de Educação 2024', 'banner4.jpg', 'Discussões sobre o futuro da educação e metodologias de ensino.', '2024-12-10', '2024-12-12', '2024-11-01', '2024-11-30', '(51) 96666-6666', 'Campo Alegria', 'video4.mp4', '09:30', '17:30', '2024-12-05');
-INSERT INTO eventos (`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `telefone`, `local`, `video`, `horario_inicio`, `horario_fim`, `fim_correcao_trabalho`)
+('Seminário de Educação 2024', 'banner4.jpg', 'Discussões sobre o futuro da educação e metodologias de ensino.', '2024-12-10', '2024-12-12', '2024-11-01', '2024-11-30', '(51) 96666-6666',now(), 'Campo Alegria', 'video4.mp4', '09:30', '17:30', '2024-12-05');
+INSERT INTO eventos (`nome`, `banner`, `descricao`, `data_inicio`, `data_fim`, `periodo_inscricao_inicio`, `periodo_inscricao_fim`, `telefone`,`criado_em`, `local`, `video`, `horario_inicio`, `horario_fim`, `fim_correcao_trabalho`)
 VALUES
-('Fórum de Sustentabilidade 2024', 'banner5.jpg', 'Debates sobre sustentabilidade e práticas ambientais.', '2024-11-01', '2024-11-02', '2024-09-20', '2024-10-15', '(71) 95555-5555', 'Salvador - BA', 'Campus Brasilia', '08:30', '15:30', '2024-10-25');
+('Fórum de Sustentabilidade 2024', 'banner5.jpg', 'Debates sobre sustentabilidade e práticas ambientais.', '2024-11-01', '2024-11-02', '2024-09-20', '2024-10-15', '(71) 95555-5555',now(), 'Salvador - BA', 'Campus Brasilia', '08:30', '15:30', '2024-10-25');
 
