@@ -51,10 +51,7 @@
             margin-top: 10px;
             margin-bottom: 10px; 
         }
-        a{
-            text-decoration: none;
-            color: #ffffff;
-        }
+    
     </style>
 </head>
 <body>
@@ -65,7 +62,7 @@
         <input type="password" id="senha" placeholder="Senha" required>
         <p><a href="#">Esqueci minha senha</a></p>
         <button type="submit" onClick='entrar()'>ENTRAR</button>
-        <button type="submit" onClick='cadastrar()'>CADASTRAR</button>
+        <a href="cadastro/cadastro.html"> CADASTRAR</a>
     </div>
     <script src="./index.js"></script>
 </body>
