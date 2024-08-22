@@ -32,13 +32,9 @@ $resultado = $con->query("select * from cursos order by nome");
                     <td><?=$linha->id?></td>
                     <td><?=$linha->nome?></td>
                     <td>
-<<<<<<< HEAD
-                        <a href="excluir.php?id=<?=$linha->id?>">Excluir</a>
-=======
-                        <a href="deletar.php?id=<?=$linha->id?>">
+                        <a href="excluir.php?id=<?=$linha->id?>">
                             <img src="https://cdn-icons-png.flaticon.com/512/18/18297.png" alt="deletar" width="20" height="20">
                         </a>
->>>>>>> 5a0a35539021fab99be6909ad6d929f7559dcd7a
 
                         <a href="editar.php?id=<?=$linha->id?>">
                             <img src="https://cdn.icon-icons.com/icons2/3794/PNG/512/edit_drawing_draw_writing_write_pen_tool_icon_232789.png" alt="editar" width="20" height="20">
