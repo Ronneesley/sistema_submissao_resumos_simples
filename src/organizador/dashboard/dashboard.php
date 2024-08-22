@@ -1,6 +1,14 @@
 <?php include("../layout_superior.php") ?>
 
 <div class="shortcuts">
+
+
+<a href="../cadastro_eixo_tematico" class="shortcut">
+        <img src="../../imagens/eixo_tematicopng.png" alt="Cadastro de Eixo Tematico">
+        Cadastro de Eixo Tematico
+    </a>
+
+
     <a href="../cadastro_evento" class="shortcut">
         <img src="../../imagens/evento.png" alt="Cadastro de Autores">
         Cadastro de Eventos
