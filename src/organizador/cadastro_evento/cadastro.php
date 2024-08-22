@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<?php include("../layout_superior.php") ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Evento</title>
-    <link rel="stylesheet" href="evento.css">
-</head>
 
-<body>
+
+    <link rel="stylesheet" href="../../css/cadastro_evento.css">
+
+
+
     <div class="container">
-        <header>
-            <img src="c:\Users\carlo\Downloads\imagem_2024-08-18_114247296.png" alt="Logotipo" class="logo">
-        </header>
 
         <h1>Cadastro de Evento</h1>
         <form action="inserir_evento.php" method="post" enctype="multipart/form-data">
@@ -95,6 +89,6 @@
             </div>
         </form>
     </div>
-</body>
 
-</html>
+
+<?php include("../layout_inferior.php") ?>
