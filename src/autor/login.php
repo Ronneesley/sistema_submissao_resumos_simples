@@ -40,6 +40,7 @@
             color: #ffffff;
             border-radius: 5px;
             margin-bottom: 10px;
+            cursor: pointer;
         }
         .login-form img {
             width: 150px; 
@@ -64,7 +65,7 @@
         <input type="password" id="senha" placeholder="Senha" required>
         <p><a href="#">Esqueci minha senha</a></p>
         <button type="submit" onClick='entrar()'>ENTRAR</button>
-        
+        <button type="submit" onClick='cadastrar()'>CADASTRAR</button>
     </div>
 
     <script src="./index.js"></script>
