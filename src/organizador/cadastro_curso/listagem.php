@@ -34,7 +34,7 @@ $resultado = $con->query("select * from cursos order by nome");
                     <td><?=$linha->id?></td>
                     <td><?=$linha->nome?></td>
                     <td>
-                        <a href="deletar.php?id=<?=$linha->id?>">Deletar</a>
+                        <a href="excluir.php?id=<?=$linha->id?>">Excluir</a>
 
                         <a href="editar.php?id=<?=$linha->id?>">Editar</a>                        
                     </td>
