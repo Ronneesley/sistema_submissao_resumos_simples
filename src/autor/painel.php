@@ -41,17 +41,17 @@
                 <div class="container-box">
                     <img src="https://cdn-icons-png.flaticon.com/512/1250/1250680.png" alt="Imagem 2">
                     <br>
-                    <button class="register-button">Cadastro de Resumo</button>
+                    <button class="register-button">Acompanhamento das Correções</button>
                 </div>
                 <div class="container-box">
                     <img src="https://cdn-icons-png.flaticon.com/512/1250/1250680.png" alt="Imagem 3">
                     <br>
-                    <button class="register-button">Cadastro de Resumo</button>
+                    <button class="register-button">Resumo em Andamento</button>
                 </div>
                 <div class="container-box">
                     <img src="https://cdn-icons-png.flaticon.com/512/1250/1250680.png" alt="Imagem 4">
                     <br>
-                    <button class="register-button">Cadastro de Resumo</button>
+                    <button class="register-button">Resumos Concluídos</button>
                 </div>
             </div>
         </main>
