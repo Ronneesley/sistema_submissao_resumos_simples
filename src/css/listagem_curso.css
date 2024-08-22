@@ -1,0 +1,64 @@
+@import url('comum.css');
+
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 100%;
+    margin: 25px;
+    border: 1px solid #010326;
+    border-radius: 15px;
+    background-color: #d9d9d9;
+}
+.filtro {
+    width: 100%;
+}
+.filtro a{
+    padding: 10px;
+    background-color: #010326;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.filtro a:hover{
+    background-color: #8c8c8c;
+    cursor: pointer;
+}
+.table-wrapper{
+    display: inline-block;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+table.listagem {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table.listagem thead {
+    background-color: #d9d9d9;
+    color: #000;
+}
+table.listagem th, table.listagem td {
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 1%; 
+}
+table.listagem tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+table.listagem tbody tr:hover {
+    background-color: #f1f1f1;
+}
+table.listagem a {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding-left: 4%;
+}
+
+table.listagem a:hover {
+    text-decoration: underline;
+}

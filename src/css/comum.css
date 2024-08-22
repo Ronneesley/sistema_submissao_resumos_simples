@@ -1,0 +1,16 @@
+@font-face {
+    font-family: inter;
+    src: url(../fontes/Inter_18pt-Bold.ttf);
+}
+
+body {
+    font-family: inter;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+h2 {
+    color: #000;
+    font-size: 2em;
+}
