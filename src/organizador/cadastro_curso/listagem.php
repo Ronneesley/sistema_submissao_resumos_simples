@@ -6,7 +6,7 @@ $con = new mysqli("localhost", "root", "", "evento");
 $resultado = $con->query("select * from cursos order by nome");
 
 ?>
-<link rel="stylesheet" href="../../css/listagem.css" />
+<link rel="stylesheet" href="../../css/listagem_curso.css" />
 
 <h2>Listagem de Cursos</h2>
 
