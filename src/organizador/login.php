@@ -62,7 +62,7 @@
     <div class="login-form">
         <img src="SSR.png" alt="Logo">
 
-        <h2>SISTEMA DE SUBMISSÃO DE RESUMOS</h2>
+        <h2>Pagina do Organizador</h2><br>
 
         <form method="post" action="logar.php" onsubmit="return validar();">
             <input type="text" id="email" name="email" placeholder="Email" required />
