@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset_senha.css">
+    <title>Redefinição de Senha</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Redefinição de senha</h1>
+        <div id="msg"></div>
+        <p>
+            Por favor insira no campo abaixo o codigo de <br>
+            ativacao que voce recebeu por e-mail e <br>
+            redefina sua senha.
+        </p>
+        <input type="text" name="codigo" id="idcodigo" placeholder="Codigo">
+        <input type="password" name="nova-senha" id="idnova-senha" placeholder="Nova senha">
+        <input type="password" name="rep-nova-senha" id="idrep-nova-senha" placeholder="Repita nova senha">
+
+        <button type="button" onclick="redefinirSenha()">Redefinir</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

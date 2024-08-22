@@ -1,12 +1,45 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+
+    <style>
+        @import url(css/inicial.css);
+    </style>
+</head>
 <body>
-    <head>
-        <title>Sistema de Submissão de Resumos Simples</title>
-    </head>
+    <div class="logo">
+        <img src="imagens/logo.png" alt="logo" width="100" height="100">
+    </div>
 
-    <body>
-        <h1>Sistema de Submissão de Resumos Simples</h1>
+    <div class="inicio">
+        <h1>SSRS</h1>
+        <h2>Sistema de Relatório e Avaliação</h2>
+        <p>Bem-vindo ao SSRS! para começar por favor, selecione seus papel abaixo</p>
+    </div>
 
-        
-    </body>
+    <div class="opcao">
+        <div class="item" onclick="navigateTo('autor')">
+            <img src="imagens/01.svg" alt="autor" width="150" height="150">
+            <button>Autor</button>
+        </div>
+        <div class="item" onclick="navigateTo('avaliador')">
+            <img src="imagens/02.svg" alt="avaliador" width="150" height="150">
+            <button>Avaliador</button>
+        </div>
+        <div class="item" onclick="navigateTo('organizador')">
+            <img src="imagens/03.svg" alt="organizador" width="150" height="150">
+            <button>Organizador</button>
+        </div>
+    </div>
+
+    <script>
+        function navigateTo(role){
+            window.location.href = role + "/login.php"
+        }
+    </script>
+
 </body>
+</html>

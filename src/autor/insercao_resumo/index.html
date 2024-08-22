@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSRS - Inserção de Resumos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SSRS - Sistema de Submissão de Resumos Simples</h1>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Inserir Novo Resumo</h2>
+            <div class="layout">
+                <div class="form-container">
+                    <form id="insercao-form">
+                        <label for="titulo">Título:</label>
+                        <input type="text" id="titulo" name="titulo" required>
+
+                        <label for="autores">Autores (separados por vírgulas):</label>
+                        <input type="text" id="autores" name="autores" required>
+
+                        <label for="introducao">Introdução:</label>
+                        <textarea id="introducao" name="introducao" rows="5" required></textarea>
+
+                        <label for="metodologia">Metodologia:</label>
+                        <textarea id="metodologia" name="metodologia" rows="5" required></textarea>
+
+                        <label for="resultados">Resultados:</label>
+                        <textarea id="resultados" name="resultados" rows="5" required></textarea>
+
+                        <label for="conclusao">Conclusão:</label>
+                        <textarea id="conclusao" name="conclusao" rows="5" required></textarea>
+
+                        <label for="data-submissao">Data de Submissão:</label>
+                        <input type="date" id="data-submissao" name="data-submissao" required>
+
+                        <button type="submit">Submeter Resumo</button>
+                    </form>
+                </div>
+                
+                <aside id="resumo-preview">
+                    <h3>Pré-visualização do Resumo</h3>
+                    <div id="resumo-content">
+                        <!-- O conteúdo será injetado aqui pelo JavaScript -->
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

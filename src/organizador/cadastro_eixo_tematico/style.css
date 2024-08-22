@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+
+header {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #383333;
+    border-radius: 4px;
+}
+
+header .logo {
+    width: 140px; 
+    height: auto;
+    margin-right: 30px; 
+    
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    border: 2px solid #fff9f9;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    
+    
+}
+
+button:hover {
+    background-color: #333;
+}
+
+button[type="reset"] {
+    background-color: #000000;
+}
+
+button[type="reset"]:hover {
+    background-color: #333;
+}
+
+
+.voltar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #050505;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.voltar:hover {
+    border-right-color: #fff9f9;
+}
+
+
