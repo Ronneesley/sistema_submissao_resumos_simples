@@ -84,8 +84,8 @@
             <textarea id="descricao" name="descricao" rows="5" required></textarea>
 
             <div class="button-group">
-                <button type="submit">Cadastrar</button>
-                <button type="reset">Cancelar</button>
+                <button type="submit">Cancelar</button>
+                <button type="reset">Cadastrar</button>
             </div>
         </form>
     </div>
