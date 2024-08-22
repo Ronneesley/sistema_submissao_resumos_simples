@@ -85,7 +85,7 @@
 
             <div class="button-group">
                 <button type="submit">Cancelar</button>
-                <button type="reset">Salva</button>
+                <button type="reset">Salvar</button>
             </div>
         </form>
     </div>
