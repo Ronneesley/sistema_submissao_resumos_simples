@@ -1,4 +1,3 @@
-
 <?php include("../layout_superior.php") ?>
 
 <?php
@@ -7,6 +6,8 @@ $con = new mysqli("localhost", "root", "", "evento");
 $resultado = $con->query("select * from cursos order by nome");
 
 ?>
+<link rel="stylesheet" href="../../css/listagem.css" />
+
 <h2>Listagem de Cursos</h2>
 
 <div class="filtro">

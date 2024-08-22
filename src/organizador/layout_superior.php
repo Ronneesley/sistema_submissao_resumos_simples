@@ -10,9 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SSRS - Sistema de Submissão de Resumos Simples</title>
 
-        <link rel="stylesheet" href="../../css/layout.css" />
-        <link rel="stylesheet" href="../../css/listagem.css" />
-        <link rel="stylesheet" href="../../css/cadastro.css" />
+        <link rel="stylesheet" href="../../css/layout.css" />               
     </head>
     <body>
         <div class="sidebar">
