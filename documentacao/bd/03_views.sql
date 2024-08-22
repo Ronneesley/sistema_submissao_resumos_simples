@@ -6,7 +6,8 @@ create view v_estatistica as
     union select 'Cursos' as tabela, count(*) as qtde from cursos
     union select 'Eixos Temáticos' as tabela, count(*) as qtde from eixos_tematicos
     union select 'Organizadores' as tabela, count(*) as qtde from organizadores
-    union select 'Resumos' as tabela, count(*) as qtde from resumos;
+    union select 'Resumos' as tabela, count(*) as qtde from resumos
+    union select 'Eventos' as tabela, count(*) as qtde from eventos;
 
 create view v_quantidade_resumos_por_autor as
     select 
