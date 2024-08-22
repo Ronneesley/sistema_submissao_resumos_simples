@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de autores</title>
-    <link rel="stylesheet" href="listagem.css">
+    <link rel="stylesheet" href="listagem_autor.css">
 </head>
 <body>
 <?php
