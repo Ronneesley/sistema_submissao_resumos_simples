@@ -2,30 +2,32 @@
     font-family: inter;
     src: url(../fontes/Inter_18pt-Bold.ttf);
 }
-body {
+body{
     font-family: inter;
     background-color: #fff;
     margin: 0;
     padding: 20px;
+    max-height: 100%;
 }
-.inicio {
+.inicio{
     background-color: #fff;
-    padding: 20px;
+    padding: 1%;
     border-radius: 15px;
+    width: 80%;
 }
-.header{
+.principal{
     padding: 10%;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
     border-bottom: 2px solid #d9d9d9;
 }
-.header h1{
+.principal h1{
     margin: 0;
     font-size: 24px;
     color: #000;
 }
-.login-button {
+.login-button{
     background-color: #010326;
     color: #fff;
     padding: 10px 20px;
@@ -34,28 +36,28 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
-.filters {
+.filtrar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
 }
-.filters input, .filters select, .filters button {
+.filtrar input, .filtrar select, .filtrar button {
     padding: 10px;
     margin-right: 10px;
     border: 1px solid #000;
     border-radius: 5px;
 }
-.filters button {
+.filtrar button {
     background-color: #010326;
     color: #fff;
     border: none;
     cursor: pointer;
 }
-.results {
+.result {
     margin-top: 20px;
 }
-.results h2 {
+.result h2 {
     color: #000;
     font-size: 20px;
     padding: 3%;

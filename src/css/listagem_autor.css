@@ -1,41 +1,22 @@
+@font-face {
+    font-family: inter;
+    src: url(../fontes/Inter_18pt-Bold.ttf);
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #010326;
-    color: #fff;
+    font-family: inter;
+    background-color: #fff;
+    color: #000;
     margin: 0;
     padding: 0;
 }
 .inicio{
     display: flex;
 }
-.corpo{
-    background-color: #595959;
-    margin: 25px;
-    padding: 15px;
-    width: 250px;
-    height: 100vh;
-}
-.corpo img {
-    width: 80px;
-    margin-bottom: 20px;
-}
-.corpo nav a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 10px 0;
-    font-size: 18px;
-    padding: 10px 15px;
-}
-.corpo a:hover{
-    background-color: #8c8c8c;
-    color: #000;
-    border-radius: 10px;
-}
 .user{
     flex-grow: 1;
     padding: 20px;
-    color: #fff;
+    color: #000;
 }
 .header {
     text-align: center;
@@ -47,7 +28,7 @@ body {
     text-align: center;
 }
 .filtro a{
-    background-color: #8c8c8c;
+    background-color: #010326;
     color: #fff;
     padding: 10px 15px;
     border-radius: 5px;
@@ -61,14 +42,14 @@ body {
 }
 .filtro input {
     padding: 10px;
-    margin-right: 10px;
+    margin-right: 15px;
     border: 1px solid #8c8c8c;
     border-radius: 5px;
-    background-color: #d9d9d9;
+    background-color: #fff;
     color: #000;
 }
 .filtro button {
-    background-color: #8c8c8c;
+    background-color: #010326;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -76,26 +57,27 @@ body {
     cursor: pointer;
 }
 .result{
-    margin-top: 20px;
+    margin-top: 5%;
 }
 table {
     width: 100%;
-    border-collapse: collapse;
     margin-top: 10px;
-    background-color: #333;
-    color: #ccc;
 }
 table, th, td {
-    border: 1px solid #555;
+    border: 0px;
+    border-radius: 10px;
 }
-th, td {
+th, td{
     padding: 10px;
     text-align: left;
-    color: #fff;
+    color: #000;
 }
 th {
-    background-color: #8c8c8c;
-    color: #000;
+    background-color: #010326;
+    color: #fff;
+}
+.result tr:hover{
+    background-color: #d9d9d9;
 }
 .opcao button {
     background: none;
@@ -112,7 +94,7 @@ th {
     margin-top: 20px;
 }
 .pagina button {
-    background-color: #8c8c8c;
+    background-color: #010326;
     color: #fff;
     padding: 10px 20px;
     border: none;

@@ -24,12 +24,12 @@ $resultado = $con->query($query);
 
 ?>
     <div class="inicio">
-        <div class="header">
+        <div class="principal">
             <h1>Listagem de Resumos Enviados</h1>
             <button class="login-button">Log In</button>
         </div>
         
-        <div class="filters">
+        <div class="filtrar">
             <input type="text" placeholder="Buscar por título">
             <input type="text" placeholder="Buscar por autor">
             <input type="text" placeholder="Buscar por avaliador">
@@ -42,7 +42,7 @@ $resultado = $con->query($query);
             </select>
             <button>Buscar</button>
         </div>
-        <div class="results">
+        <div class="result">
             <h2>Resultado da Lista de Resumos a serem avaliados ou já avaliados</h2>
             <table>
                 <tr>

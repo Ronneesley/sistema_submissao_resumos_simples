@@ -16,15 +16,6 @@ $resultado = $con->query("select * from autores order by nome");
 
 ?>
     <div class="inicio">
-        <aside class="corpo">
-            <img src="logo.png" alt="Logo SSR">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Agenda</a>
-                <a href="#">Relatórios</a>
-                <a href="#">Configurações</a>
-            </nav>
-        </aside>
         <div class="user">
             <div class="header">
                 <h1>Usuários</h1>

@@ -18,7 +18,6 @@ $resultado = $con->query("select * from cursos order by nome");
 <table class="listagem">
     <thead>
         <tr>
-            <th>ID</th>
             <th>Nome</th>
             <th>Opções</th>
         </tr>
@@ -29,7 +28,6 @@ $resultado = $con->query("select * from cursos order by nome");
             while ($linha = $resultado->fetch_object()){
         ?>
                 <tr>
-                    <td><?=$linha->id?></td>
                     <td><?=$linha->nome?></td>
                     <td>
                         <a href="excluir.php?id=<?=$linha->id?>">
