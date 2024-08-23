@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="avaliador_cadastro.css">
 </head>
+
 <body>
     <div class="header">
         <h1>SSRS - Sistema de Submissão de Resumos Simples</h1>
@@ -40,8 +42,24 @@
 
                 <label for="curso">Curso:</label>
                 <select id="curso" name="curso" required>
-                    <option value="">Selecione...</option>
-                    <!-- Adicione opções de curso aqui -->
+                    <option value="">Selecione...
+                        <?php
+
+                        $con = new mysqli("localhost", "root", "", "evento");
+                        $resultado = $con->query("select * from cursos order by nome");
+
+                        while ($linha = $resultado->fetch_object()) {
+                            $id = $linha->id;
+                            $nome = $linha->nome;
+                            echo "<option value='$id'>$nome</option>";
+                        }
+
+                        $con->close();
+
+                        ?>
+                    </option>
+
+                </select>
                 </select>
 
                 <label for="formacao">Formação:</label>
@@ -52,4 +70,5 @@
         </div>
     </div>
 </body>
+
 </html>
