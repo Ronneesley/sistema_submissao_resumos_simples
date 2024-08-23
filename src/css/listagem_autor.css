@@ -1,78 +1,81 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #2e2e2e;
-    color: #ccc;
+    background-color: #010326;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
-.container {
+.inicio{
     display: flex;
 }
-.sidebar {
-    background-color: #404040;
-    padding: 20px;
+.corpo{
+    background-color: #595959;
+    margin: 25px;
+    padding: 15px;
     width: 250px;
     height: 100vh;
 }
-.sidebar img {
+.corpo img {
     width: 80px;
     margin-bottom: 20px;
 }
-.sidebar nav a {
-    color: #ccc;
+.corpo nav a {
+    color: #fff;
     text-decoration: none;
     display: block;
     padding: 10px 0;
     font-size: 18px;
+    padding: 10px 15px;
 }
-.main-content {
+.corpo a:hover{
+    background-color: #8c8c8c;
+    color: #000;
+    border-radius: 10px;
+}
+.user{
     flex-grow: 1;
     padding: 20px;
+    color: #fff;
 }
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
+    margin: 5%;
+    padding: 10px;
 }
 .header h1 {
-    margin: 0;
-    font-size: 24px;
+    margin: 12px;
+    text-align: center;
 }
-.header .user-info {
-    display: flex;
-    align-items: center;
+.filtro a{
+    background-color: #8c8c8c;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
 }
-.header .user-info img {
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-.header .user-info span {
-    font-size: 18px;
-}
-.filters {
+.filtro{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
 }
-.filters input {
+.filtro input {
     padding: 10px;
     margin-right: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #8c8c8c;
     border-radius: 5px;
-    background-color: #333;
-    color: #ccc;
+    background-color: #d9d9d9;
+    color: #000;
 }
-.filters button {
-    background-color: #374149;
-    color: white;
+.filtro button {
+    background-color: #8c8c8c;
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-.results {
+.result{
     margin-top: 20px;
 }
 table {
@@ -88,37 +91,39 @@ table, th, td {
 th, td {
     padding: 10px;
     text-align: left;
+    color: #fff;
 }
 th {
-    background-color: #555;
+    background-color: #8c8c8c;
+    color: #000;
 }
-.actions button {
+.opcao button {
     background: none;
     border: none;
-    color: #ccc;
+    color: #fff;
     cursor: pointer;
     padding: 0 5px;
     font-size: 16px;
 }
-.pagination {
+.pagina{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 }
-.pagination button {
-    background-color: #1e272e;
-    color: white;
+.pagina button {
+    background-color: #8c8c8c;
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-.pagination .pages span {
+.pagina .pages span {
     padding: 0 5px;
     cursor: pointer;
 }
-.pagination .pages .active {
+.pagina .pages .active {
     font-weight: bold;
     text-decoration: underline;
 }

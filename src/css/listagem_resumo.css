@@ -1,0 +1,84 @@
+@font-face {
+    font-family: inter;
+    src: url(../fontes/Inter_18pt-Bold.ttf);
+}
+body {
+    font-family: inter;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+.inicio {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+.header{
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #d9d9d9;
+}
+.header h1{
+    margin: 0;
+    font-size: 24px;
+    color: #000;
+}
+.login-button {
+    background-color: #010326;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.filters input, .filters select, .filters button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.filters button {
+    background-color: #010326;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.results {
+    margin-top: 20px;
+}
+.results h2 {
+    color: #000;
+    font-size: 20px;
+    padding: 3%;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table, th, td {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 10px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #010326;
+    color: #fff;
+}
+tr:nth-child(even) {
+    background-color: #d9d9d9;
+}

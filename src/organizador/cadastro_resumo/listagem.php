@@ -6,85 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de Resumos Enviados</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #4CAF50;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #333;
-        }
-        .login-button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .filters {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px 0;
-        }
-        .filters input, .filters select, .filters button {
-            padding: 10px;
-            margin-right: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .filters button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .results {
-            margin-top: 20px;
-        }
-        .results h2 {
-            color: #333;
-            font-size: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="../../css/listagem_resumo.css">
+
 </head>
 <body>
 <?php
@@ -99,11 +23,12 @@ $query = "
 $resultado = $con->query($query);
 
 ?>
-    <div class="container">
+    <div class="inicio">
         <div class="header">
             <h1>Listagem de Resumos Enviados</h1>
             <button class="login-button">Log In</button>
         </div>
+        
         <div class="filters">
             <input type="text" placeholder="Buscar por título">
             <input type="text" placeholder="Buscar por autor">
