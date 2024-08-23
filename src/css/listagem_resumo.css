@@ -80,5 +80,9 @@ th {
     color: #fff;
 }
 tr:nth-child(even) {
+    background-color: #f9f9f9d2;
+}
+
+tr:nth-child(even) :hover{
     background-color: #d9d9d9;
 }

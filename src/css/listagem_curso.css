@@ -21,7 +21,7 @@ input[type="text"] {
     font-size: 12px;
 }
 .filtro a:hover{
-    background-color: #8c8c8c;
+    background-color: #d9d9d9;
     cursor: pointer;
 }
 .table-wrapper{
@@ -37,8 +37,8 @@ table.listagem {
     margin-top: 20px;
 }
 table.listagem thead {
-    background-color: #d9d9d9;
-    color: #000;
+    background-color: #010326;
+    color: #fff;
 }
 table.listagem th, table.listagem td {
     padding: 10px;
@@ -50,7 +50,7 @@ table.listagem tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 table.listagem tbody tr:hover {
-    background-color: #f1f1f1;
+    background-color: #d9d9d9;
 }
 table.listagem a {
     color: #000;
@@ -58,7 +58,6 @@ table.listagem a {
     font-size: 0.9em;
     padding-left: 4%;
 }
-
 table.listagem a:hover {
     text-decoration: underline;
 }
