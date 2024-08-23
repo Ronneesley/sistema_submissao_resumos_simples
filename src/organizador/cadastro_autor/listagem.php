@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de autores</title>
-    <link rel="stylesheet" href="listagem_autor.css">
+    <link rel="stylesheet" href="../../css/listagem_autor.css">
 </head>
 <body>
 <?php
@@ -15,8 +15,8 @@ $con = new mysqli("localhost", "root", "", "evento");
 $resultado = $con->query("select * from autores order by nome");
 
 ?>
-    <div class="container">
-        <aside class="sidebar">
+    <div class="inicio">
+        <aside class="corpo">
             <img src="logo.png" alt="Logo SSR">
             <nav>
                 <a href="#">Home</a>
@@ -25,22 +25,18 @@ $resultado = $con->query("select * from autores order by nome");
                 <a href="#">Configurações</a>
             </nav>
         </aside>
-        <div class="main-content">
+        <div class="user">
             <div class="header">
                 <h1>Usuários</h1>
-                <div class="user-info">
-                    <img src="user.jpg" alt="User Photo">
-                    <span>Otávio Badaró</span>
-                </div>
             </div>
-            <div class="filters">
+            <div class="filtro">
                 <input type="text" placeholder="CPF / Username">
                 <input type="text" placeholder="Nº Trabalhos">
                 <input type="text" placeholder="Status">
                 <button>Pesquisar</button>
                 <a href="cadastro.php">Incluir</a>
             </div>
-            <div class="results">
+            <div class="result">
                 <table>
                 <thead>
                     <tr>
@@ -62,7 +58,7 @@ $resultado = $con->query("select * from autores order by nome");
                         <td><?=$linha->email?></td>
                         <td>158</td>
                         <td><span style="color: lime;">●</span></td>  
-                        <td class="actions">
+                        <td class="opcao">
                             <button>⚙️</button>
                             <button>✏️</button>
                             <button>🗑️</button>
@@ -76,7 +72,7 @@ $resultado = $con->query("select * from autores order by nome");
                     <!-- Adicione mais linhas conforme necessário -->
                 </table>
             </div>
-            <div class="pagination">
+            <div class="pagina">
                 <button>Anterior</button>
                 <div class="pages">
                     <span class="active">1</span>
