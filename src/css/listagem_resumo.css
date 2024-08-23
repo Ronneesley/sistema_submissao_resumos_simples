@@ -23,8 +23,7 @@ body{
     border-bottom: 2px solid #d9d9d9;
 }
 .principal h1{
-    margin: 0;
-    font-size: 24px;
+    margin: auto;
     color: #000;
 }
 .login-button{
