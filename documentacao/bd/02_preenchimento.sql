@@ -29,11 +29,11 @@ INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`te
 INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`) VALUES (5, 'ronneesley', 'ronneesley@gmail.com', md5(1234567), 5, 'Doutorado','(63)99165-0000');
 
 -- Cadastrado Eixos tematicos
-insert into eixos_tematicos(id, nome) values(1, 'Questões sociais');
-insert into eixos_tematicos(id, nome) values(2, 'Meio Ambiente');
-insert into eixos_tematicos(id, nome) values(3, 'Direitos e cidadania');
-insert into eixos_tematicos(id, nome) values(4, 'Saúde');
-insert into eixos_tematicos(id, nome) values(5, 'Arte e Cultura');
+insert into eixos_tematicos(id, nome,descricao) values(1, 'Questões sociais','valores sociais');
+insert into eixos_tematicos(id, nome,descricao) values(2, 'Meio Ambiente','valores sociais');
+insert into eixos_tematicos(id, nome,descricao) values(3, 'Direitos e cidadania','valores sociais');
+insert into eixos_tematicos(id, nome,descricao) values(4, 'Saúde','valores sociais');
+insert into eixos_tematicos(id, nome,descricao) values(5, 'Arte e Cultura','valores sociais');
 
 -- Cadastrado Resumos
 INSERT INTO resumos (`id`, `titulo`, `palavras_chave`, `texto`, `eixo_tematico`) VALUES (1, 'A sociedade e a Democracia ', 'sociedade, democracia, desigualdade, inclusão', 'As questões sociais envolvem o estudo e a análise das diversas problemáticas que afetam a sociedade, incluindo desigualdade, pobreza, discriminação e exclusão social. Esse eixo temático busca entender as dinâmicas sociais e propor soluções para promover a justiça social e a inclusão de todas as camadas da população. Pesquisas e projetos nessa área frequentemente abordam temas como educação, moradia, segurança, trabalho e políticas públicas.', '1');
