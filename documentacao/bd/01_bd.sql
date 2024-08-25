@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `evento`.`cursos` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE INDEX `nome_UNIQUE` (`nome` ASC) VISIBLE)
+  UNIQUE INDEX `nome_UNIQUE` (`nome` ASC))
 ENGINE = InnoDB;
 
 
@@ -40,11 +40,11 @@ CREATE TABLE IF NOT EXISTS `evento`.`autores` (
   `senha` VARCHAR(32) NULL,
   `curso` INT NOT NULL,
   PRIMARY KEY (`id`, `curso`),
-  UNIQUE INDEX `cpf_UNIQUE` (`cpf` ASC) VISIBLE,
-  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE,
-  UNIQUE INDEX `nome_UNIQUE` (`nome` ASC) VISIBLE,
-  UNIQUE INDEX `senha_UNIQUE` (`senha` ASC) VISIBLE,
-  INDEX `fk_autores_cursos1_idx` (`curso` ASC) VISIBLE,
+  UNIQUE INDEX `cpf_UNIQUE` (`cpf` ASC),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC),
+  UNIQUE INDEX `nome_UNIQUE` (`nome` ASC),
+  UNIQUE INDEX `senha_UNIQUE` (`senha` ASC),
+  INDEX `fk_autores_cursos1_idx` (`curso` ASC),
   CONSTRAINT `fk_autores_cursos1`
     FOREIGN KEY (`curso`)
     REFERENCES `evento`.`cursos` (`id`)
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `evento`.`resumos` (
   `data_cadastro` DATE NOT NULL,
   `eixo_tematico` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `eixo_tematico_idx` (`eixo_tematico` ASC) VISIBLE,
+  INDEX `eixo_tematico_idx` (`eixo_tematico` ASC),
   CONSTRAINT `eixo_tematico`
     FOREIGN KEY (`eixo_tematico`)
     REFERENCES `evento`.`eixos_tematicos` (`id`)
@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `evento`.`avaliadores` (
   `formacao` VARCHAR(45) NULL,
   `telefone` VARCHAR(15) NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_avaliadores_cursos1_idx` (`curso` ASC) VISIBLE,
+  INDEX `fk_avaliadores_cursos1_idx` (`curso` ASC),
   CONSTRAINT `fk_avaliadores_cursos1`
     FOREIGN KEY (`curso`)
     REFERENCES `evento`.`cursos` (`id`)
@@ -112,8 +112,8 @@ CREATE TABLE IF NOT EXISTS `evento`.`autorias` (
   `autor` INT NOT NULL,
   `resumo` INT NOT NULL,
   PRIMARY KEY (`autor`, `resumo`),
-  INDEX `fk_AUTORES_has_RESUMOS_RESUMOS1_idx` (`resumo` ASC) VISIBLE,
-  INDEX `fk_AUTORES_has_RESUMOS_AUTORES1_idx` (`autor` ASC) VISIBLE,
+  INDEX `fk_AUTORES_has_RESUMOS_RESUMOS1_idx` (`resumo` ASC),
+  INDEX `fk_AUTORES_has_RESUMOS_AUTORES1_idx` (`autor` ASC),
   CONSTRAINT `fk_AUTORES_has_RESUMOS_AUTORES1`
     FOREIGN KEY (`autor`)
     REFERENCES `evento`.`autores` (`id`)
@@ -136,8 +136,8 @@ CREATE TABLE IF NOT EXISTS `evento`.`avaliacoes` (
   `nota` DECIMAL(3,1) NOT NULL,
   `comentario` TEXT(300) NULL,
   PRIMARY KEY (`avaliador`, `resumo`),
-  INDEX `fk_avaliadores_has_resumos_resumos1_idx` (`resumo` ASC) VISIBLE,
-  INDEX `fk_avaliadores_has_resumos_avaliadores1_idx` (`avaliador` ASC) VISIBLE,
+  INDEX `fk_avaliadores_has_resumos_resumos1_idx` (`resumo` ASC),
+  INDEX `fk_avaliadores_has_resumos_avaliadores1_idx` (`avaliador` ASC),
   CONSTRAINT `fk_avaliadores_has_resumos_avaliadores1`
     FOREIGN KEY (`avaliador`)
     REFERENCES `evento`.`avaliadores` (`id`)
