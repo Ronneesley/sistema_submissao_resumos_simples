@@ -11,6 +11,7 @@ $resultado = $con->query("select * from cursos order by nome");
 <h2>Listagem de Cursos</h2>
 
 <div class="filtro">
+
     <input type="text" id="nome" placeholder="Pesquisar" required> 
     <a href="./cadastro.php">Novo</a>
 </div>

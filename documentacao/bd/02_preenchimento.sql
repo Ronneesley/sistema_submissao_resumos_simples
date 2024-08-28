@@ -8,7 +8,7 @@ insert into cursos(id, nome) values(5, 'Artes');
 -- Cadastrado Organizadores
 INSERT INTO organizadores (`id`, `nome`, `login`, `senha`, `data_cadastro`, `email`) VALUES (1, 'thallison', 'teste', md5(123), '2024-08-08', 'thallison@gmail.com');
 INSERT INTO organizadores (`id`, `nome`, `login`, `senha`, `data_cadastro`, `email`) VALUES ('2', 'otavio', 'teste', md5(12332), '2024-09-08', 'otavio@gmail.com');
-INSERT INTO organizadores (`id`, `nome`, `login`, `senha`, `data_cadastro`, `email`) VALUES ('3', 'Carlos', 'teste', md5(12355), '2023-05-10', 'carlosn@gmail.com');
+INSERT INTO organizadores (`id`, `nome`, `login`, `senha`, `data_cadastro`, `email`) VALUES ('3', 'Carlos', 'teste', md5(35512), '2023-05-10', 'carlosn@gmail.com');
 INSERT INTO organizadores (`id`, `nome`, `login`, `senha`, `data_cadastro`, `email`) VALUES ('4', 'Jeova', 'teste', md5(1239798), '2022-01-09', 'jeova@gmail.com');
 INSERT INTO organizadores (`id`, `nome`, `login`, `senha`, `data_cadastro`, `email`) VALUES ('5', 'Jailson', 'teste', md5(123345), '2021-04-06', 'jailson@gmail.com');
 INSERT INTO organizadores (`id`, `nome`, `login`, `senha`, `data_cadastro`, `email`) VALUES ('6', 'Ronneesley Moura Teles', 'ronneesley', md5('123'), '2021-04-06', 'ronneesley@gmail.com');
