@@ -10,10 +10,11 @@ input[type="text"] {
     background-color: #d9d9d9;
 }
 .filtro {
-    width: 100%;
+    width: 75%;
 }
 .filtro a{
     padding: 12px;
+    margin-left: 12%;
     background-color: #010326;
     color: #fff;
     text-decoration: none;
@@ -32,7 +33,7 @@ input[type="text"] {
     border-collapse: collapse;
 }
 table.listagem {
-    width: 100%;
+    width: 75%;
     border-collapse: collapse;
     margin-top: 20px;
 }
