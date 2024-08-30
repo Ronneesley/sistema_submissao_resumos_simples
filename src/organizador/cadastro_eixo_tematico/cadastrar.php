@@ -1,9 +1,9 @@
 <?php
 
-require 'cadastrar.php'; 
+require 'inserir.php'; 
 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if($_SERVER["REQUEST_METHOD"] == "POST") {
   
     $nome = filter_input(INPUT_POST, 'nome');
     $descricao = filter_input(INPUT_POST, 'descricao');

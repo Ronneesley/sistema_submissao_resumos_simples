@@ -1,6 +1,6 @@
 <?php
 
-require 'cadastra.bd.php';
+require 'inserir.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $nome = $_POST['nome'];

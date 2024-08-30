@@ -1,22 +1,22 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "evento");
 
-$id = $_POST['id'];
+$conn = mysqli_connect("localhost", "root", "", "evento");
 
-if (is_numeric($id)) {
-    $sql = "DELETE FROM eixos_tematicos WHERE id = ?";
-    $result = $conn->prepare($sql);
-    $result->bind_param("i", $id);
-
-    if ($result->execute()) {
-        if ($result->affected_rows > 0) {
-            echo "eixo tematico excluído com sucesso.";
-        } else {
-            echo "Nenhum eixo tematico encontrado com o ID fornecido.";
-        }
-    } 
-    $result->close();
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
-$conn->close();
-?>
 
+$id = $_GET['id'];
+
+
+$query = "DELETE FROM eixos_tematicos WHERE id = '$id'";
+
+if (mysqli_query($conn, $query)) {
+    echo "Deletado com sucesso";
+} else {
+    echo "error: " . mysqli_error($conn);
+}
+
+
+mysqli_close($conn);
+?>
