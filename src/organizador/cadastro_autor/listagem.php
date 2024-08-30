@@ -51,10 +51,10 @@ $resultado = $con->query("select * from autores order by nome");
                         <td><span style="color: lime;">●</span></td>  
                         <td class="opcao">
                             <button>⚙️</button>
-                            <button>✏️</button>
+                            <a href="editar.php?id=<?=$linha->id?>">✏️</a>
                             <button>🗑️</button>
                             <button>👁️</button>
-                        </tD>
+                        </td>
                     </tr>
                     <?php
                             }
