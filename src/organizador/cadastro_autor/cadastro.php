@@ -35,7 +35,6 @@
                     $nome = $linha->nome;
                     echo "<option value='$id'>$nome</option>";
                 }
-
                 $con->close();
             ?>
             </select>
@@ -50,9 +49,8 @@
             <label>Confirmar Senha</label><br />
             <input type="password" name="confirmar_senha" />
             <br />
-
-            
-            <br /><br />
+        
+            <br />
 
             <input type="submit" value="Cadastrar" />
         </form>
