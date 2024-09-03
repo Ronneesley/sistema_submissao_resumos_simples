@@ -7,29 +7,31 @@ body{
     color: #fff;
     margin: 0;
     padding: 0;
+    font-family: inter;
 }
 h1{
     margin: 5%;
     text-align: center;
 }
-form{
-    height: 15%;
-    margin: 10px;
-    padding: 28px;
-    box-shadow: 0 0 50px #595959;
+form {
     border-radius: 10px;
-    flex-direction: column;
-    text-align: center;
+    height: 50%;
+    padding: 28px;
+    margin: 10px;
+    box-shadow: 0 0 50px #595959;
 }
 label{
     font-size: 19px;
     font-weight: bold;
     padding: 10px;
+    margin: 0;
+    display: block;
 }
-input {
+input{
     border: 1px solid #8c8c8c;
     border-radius: 5px;
     padding: 5px;
+    margin: 5px;
 }
 input[type="submit"]{
     background-color: #595959;
@@ -38,5 +40,4 @@ input[type="submit"]{
     padding: 5px;
     font-size: 16px;
     margin: 5px;
-    text-align: center;
 }
