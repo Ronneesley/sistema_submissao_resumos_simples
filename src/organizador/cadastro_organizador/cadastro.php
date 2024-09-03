@@ -9,24 +9,27 @@
 </head>
 <body>
     <h1>Adicionar Organizador</h1>
-    <form action="inserir.php" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"><br><br>
-       
-        <label for="login">Login:</label>
-        <input type="text" id="login" name="login" required><br><br>
-       
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required><br><br>
-       
-        <label for="data_cadastro">Data de Cadastro:</label>
-        <input type="date" id="data_cadastro" name="data_cadastro"><br><br>
-       
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-       
-        <input type="submit" value="Cadastrar">
+    <div class="form">
+        <form  method="post" action="inserir.php">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+        
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login" required><br><br>
+        
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br><br>
+        
+            <label for="data_cadastro">Data de Cadastro:</label>
+            <input type="date" id="data_cadastro" name="data_cadastro"><br><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+        
+            <input type="submit" value="Cadastrar">
     </form>
+    </div>
+    
 </body>
 </html>
 

@@ -19,14 +19,18 @@
             <label>Nome</label><br />
             <input type="text" name="nome" />
             <br />
+
             <label>CPF</label><br />
             <input type="text" name="cpf" />
             <br />
+
             <label>E-mail</label><br />
             <input type="text" name="email" />
             <br />
+
             <label>Curso Inscrito:</label><br />
             <select name="curso">
+                
             <?php
                 $con = new mysqli("localhost", "root", "", "evento");
                 $resultado = $con->query("select * from cursos order by nome");
