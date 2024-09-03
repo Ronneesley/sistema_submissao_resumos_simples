@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Adicionar Organizador</h1>
-    <div class="form">
+    
         <form  method="post" action="inserir.php">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome"><br><br>
@@ -28,7 +28,7 @@
         
             <input type="submit" value="Cadastrar">
     </form>
-    </div>
+    
     
 </body>
 </html>
