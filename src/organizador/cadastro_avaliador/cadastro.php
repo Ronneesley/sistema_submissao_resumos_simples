@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Avaliador</title>
+    <link rel="stylesheet" href="../../css/cadastro_avaliador.css">
 </head>
 <body>
     <h1>Crie sua conta</h1>
@@ -34,7 +35,7 @@
         ?>
         </select>
         <br />
-
+        <br />
         <label>Formação</label><br />
         <input type="text" name="formacao" />
         <br />

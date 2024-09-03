@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Inserir Organizador</title>
+    <link rel="stylesheet" href="../../css/cadastro_organizador.css">
 </head>
 <body>
     <h1>Adicionar Organizador</h1>

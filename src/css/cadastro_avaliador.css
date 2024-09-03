@@ -1,0 +1,45 @@
+@font-face {
+    font-family: inter;
+    src: url(../fontes/Inter_18pt-Bold.ttf);
+}
+body{
+    background-color: #010326;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 5%;
+}
+select{
+    padding: 5px;
+    border-radius: 5px;
+}
+form{
+    height: 100%;
+    margin: 10px;
+    padding: 28px;
+    box-shadow: 0 0 50px #595959;
+    flex-direction: column;
+    border-radius: 10px;
+}
+label{
+    font-size: 19px;
+    font-weight: bold;
+    margin: 3px;
+    display: block;
+}
+input[type="text"],
+input[type="password"]
+{
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+}
+input[type="submit"]{
+    background-color: #595959;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 14px;
+}

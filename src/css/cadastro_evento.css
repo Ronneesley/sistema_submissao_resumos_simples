@@ -1,3 +1,7 @@
+@font-face {
+    font-family: inter;
+    src: url(../fontes/Inter_18pt-Bold.ttf);
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #010326;
@@ -23,6 +27,7 @@ form{
     margin: 15px;
     padding: 28px;
     box-shadow: 0 0 50px #595959;
+    border-radius: 10px;
 }
 label{
     margin-bottom: 3px;
