@@ -1,4 +1,5 @@
 <?php include("../layout_superior.php") ?>
+<?php include_once '../verifica_sessao.php'; ?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
