@@ -22,11 +22,11 @@ INSERT INTO autores (`id`, `nome`, `email`, `cpf`, `instituicao_ensino`, `senha`
 
 
 -- Cadastrado Avaliadores
-INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`,`aprovado`) VALUES (1, 'carol', 'carol@gmail.com', md5(123), 1, 'Graduada','(63)99165-2222','aprovado');
-INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`,`aprovado`) VALUES (2, 'thaisa', 'thaisa@gmail.com', md5(1234), 2, 'Superior','(63)99165-4444','aprovado');
-INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`,`aprovado`) VALUES (3, 'monalisa', 'monalisa@gmail.com', md5(12345), 3, 'Tecnico','(63)99165-2222','aprovado');
-INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`,`aprovado`) VALUES (4, 'beatriz', 'beatriz@gmail.com', md5(123456), 4, 'Mestrado','(63)99165-7777','aprovado');
-INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`,`aprovado`) VALUES (5, 'ronneesley', 'ronneesley@gmail.com', md5(1234567), 5, 'Doutorado','(63)99165-0000','aprovado');
+INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`,`aprovado`) VALUES (1, 'carol', 'carol@gmail.com', md5(123), 1, 'Graduada','(63)99165-2222',true);
+INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`,`aprovado`) VALUES (2, 'thaisa', 'thaisa@gmail.com', md5(1234), 2, 'Superior','(63)99165-4444',true);
+INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`,`aprovado`) VALUES (3, 'monalisa', 'monalisa@gmail.com', md5(12345), 3, 'Tecnico','(63)99165-2222',true);
+INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`,`aprovado`) VALUES (4, 'beatriz', 'beatriz@gmail.com', md5(123456), 4, 'Mestrado','(63)99165-7777',true);
+INSERT INTO avaliadores (`id`, `nome`, `email`, `senha`, `curso`, `formacao`,`telefone`,`aprovado`) VALUES (5, 'ronneesley', 'ronneesley@gmail.com', md5(1234567), 5, 'Doutorado','(63)99165-0000',true);
 
 -- Cadastrado Eixos tematicos
 insert into eixos_tematicos(id, nome,descricao) values(1, 'Questões sociais','valores sociais');
