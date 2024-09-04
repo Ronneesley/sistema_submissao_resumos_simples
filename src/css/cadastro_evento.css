@@ -1,20 +1,12 @@
 @import url("cadastro.css");
 
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #010326;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
 header{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 h1{
-    color: #fff;
+    color: #000;
     margin: 20 0;
     text-align: center;
 }
@@ -30,7 +22,6 @@ form{
 }
 label{
     margin-bottom: 3px;
-    color: #fff;
     font-weight: bold;
     display: block;
 }
