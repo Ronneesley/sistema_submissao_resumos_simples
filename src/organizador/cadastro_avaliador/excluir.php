@@ -1,3 +1,4 @@
+<?php include_once '../verifica_sessao.php'; ?>
 <?php
 
 $conn = new mysqli("localhost", "root", "", "evento");
