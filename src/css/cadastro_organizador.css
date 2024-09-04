@@ -25,8 +25,10 @@ label{
 }
 form{
     box-shadow: 0 0 50px #595959;
-    margin: 10px;
     padding: 28px;
+    margin-inline-start: 40%;
+    margin-inline-end: 40%;
+    border-radius: 10px;
     display: block;
     justify-content: center;
     align-items: center;
