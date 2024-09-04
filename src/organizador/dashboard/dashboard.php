@@ -31,6 +31,10 @@
         <img src="../../imagens/resumo.png" alt="Cadastro de Resumos">
         Cadastro de Resumos
     </a>
+    <a href="../cadastro_organizador" class="shortcut">
+        <img src="../../imagens/organizador.png" alt="Cadastro de Organizadores">
+        Cadastro de Organizadores
+    </a>
 </div>
 
 <?php include("../layout_inferior.php") ?>
