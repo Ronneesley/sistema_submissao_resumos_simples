@@ -1,17 +1,5 @@
+@import url("cadastro.css");
 
-
-@font-face {
-    font-family: inter;
-    src: url(../fontes/Inter_18pt-Bold.ttf);
-}
-
-body{
-    background-color: #010326;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    font-family: inter;
-}
 h1{
     margin: 0;
     text-align: center;
@@ -21,17 +9,14 @@ label{
     font-size: 19px;
     font-weight: bold;
     margin: 3px;
-    text-align: center;
+   
 }
 form{
     box-shadow: 0 0 50px #595959;
-    padding: 28px;
     margin-inline-start: 40%;
     margin-inline-end: 40%;
     border-radius: 10px;
     display: block;
-    justify-content: center;
-    align-items: center;
 }
 input{
     border: 1px solid #8c8c8c;
