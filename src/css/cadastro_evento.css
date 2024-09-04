@@ -1,7 +1,6 @@
-@font-face {
-    font-family: inter;
-    src: url(../fontes/Inter_18pt-Bold.ttf);
-}
+@import url("cadastro.css");
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #010326;
