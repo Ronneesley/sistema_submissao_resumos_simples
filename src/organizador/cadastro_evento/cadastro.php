@@ -1,5 +1,5 @@
 <?php include("../layout_superior.php") ?>
-
+<?php include_once '../verifica_sessao.php'; ?>
 
 
 <link rel="stylesheet" href="../../css/cadastro_evento.css">

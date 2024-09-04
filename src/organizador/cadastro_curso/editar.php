@@ -1,5 +1,5 @@
 <?php include("../layout_superior.php") ?>
-
+<?php include_once '../verifica_sessao.php'; ?>
 <?php
 
 $id = $_GET["id"];

@@ -1,4 +1,5 @@
 <?php include("../layout_superior.php") ?>
+<?php include_once '../verifica_sessao.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,14 +19,18 @@
             <label>Nome</label><br />
             <input type="text" name="nome" />
             <br />
+
             <label>CPF</label><br />
             <input type="text" name="cpf" />
             <br />
+
             <label>E-mail</label><br />
             <input type="text" name="email" />
             <br />
+
             <label>Curso Inscrito:</label><br />
             <select name="curso">
+                
             <?php
                 $con = new mysqli("localhost", "root", "", "evento");
                 $resultado = $con->query("select * from cursos order by nome");
@@ -35,7 +40,6 @@
                     $nome = $linha->nome;
                     echo "<option value='$id'>$nome</option>";
                 }
-
                 $con->close();
             ?>
             </select>
@@ -50,9 +54,8 @@
             <label>Confirmar Senha</label><br />
             <input type="password" name="confirmar_senha" />
             <br />
-
-            
-            <br /><br />
+        
+            <br />
 
             <input type="submit" value="Cadastrar" />
         </form>

@@ -1,0 +1,43 @@
+@import url("cadastro.css");
+
+body{
+    background-color: #010326;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+}
+h1{
+    margin: 0;
+    text-align: center;
+    padding: 3%;
+}
+label{
+    font-size: 19px;
+    font-weight: bold;
+    margin: 3px;
+    text-align: center;
+}
+form{
+    box-shadow: 0 0 50px #595959;
+    padding: 28px;
+    margin-inline-start: 40%;
+    margin-inline-end: 40%;
+    border-radius: 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border: 1px solid #8c8c8c;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+}
+input[type="submit"]{
+    background-color: #595959;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 14px;
+}
