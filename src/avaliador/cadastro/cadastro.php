@@ -34,6 +34,10 @@
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
 
+                <label>Telefone</label><br />
+                <input type="text" name="telefone" />
+                <br />
+
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" required>
 
