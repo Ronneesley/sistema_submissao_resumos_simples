@@ -36,7 +36,7 @@
                 <input type="email" id="email" name="email" required>
 
                 <label>Telefone</label><br />
-                <input type="text" name="telefone" />
+                <input type="text" name="telefone" required/>
                 <br />
 
                 <label for="senha">Senha:</label>
