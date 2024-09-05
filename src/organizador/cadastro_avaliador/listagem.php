@@ -83,7 +83,7 @@ $resultado = $con->query("SELECT id, nome, email, formacao FROM avaliadores ORDE
             <td>
                 <button class="details-btn" onclick="mostrarDetalhes(this, '<?=$nome?>', '<?=$email?>', '<?=$formacao?>')">👁️</button>
                 <a class="edit-btn" href="editar.php?id=<?=$id?>">✏️</a>
-                <button class="delete-btn">🗑️</button>
+                <a class="delete-btn" href="excluir.php?id=<?=$id?>" onclick="return confirm('Você tem certeza que deseja excluir este avaliador?')">🗑️</a>
             </td>
         </tr>
         <tr class="details-row" style="display: none;">

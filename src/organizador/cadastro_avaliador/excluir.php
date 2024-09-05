@@ -1,23 +1,30 @@
 <?php include_once '../verifica_sessao.php'; ?>
+
 <?php
 
 $conn = new mysqli("localhost", "root", "", "evento");
 
-$id = $_POST['id'];
+// Verifica se o ID está definido e é um número
+$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
-if (is_numeric($id)) {
+if ($id > 0) {
     $sql = "DELETE FROM avaliadores WHERE id = ?";
     $result = $conn->prepare($sql);
     $result->bind_param("i", $id);
 
     if ($result->execute()) {
         if ($result->affected_rows > 0) {
-            echo "Avaliador excluído com sucesso.";
+            header("Location: listagem.php?msg=success");
         } else {
-            echo "Nenhum avaliador encontrado com o ID fornecido.";
+            header("Location: listagem.php?msg=notfound");
         }
-    } 
+    } else {
+        echo "Erro ao excluir avaliador: " . $result->error;
+    }
     $result->close();
+} else {
+    echo "ID inválido.";
 }
+
 $conn->close();
 ?>
