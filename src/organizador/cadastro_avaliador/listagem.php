@@ -6,9 +6,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSRS - Sistema de Submissão de Resumos Simples</title>
-    <link rel="stylesheet" href="../../ccs/listagem_avaliador.css">
+    <link rel="stylesheet" href="../../css/listagem_avaliador.css">
+    <script>
+        function mostrarDetalhes(button, nome, email, formacao) {
+            // Se já houver uma linha de detalhes, removê-la
+            var existingDetailsRow = button.closest('tr').nextElementSibling;
+            if (existingDetailsRow && existingDetailsRow.classList.contains('details-row')) {
+                existingDetailsRow.remove();
+                return;
+            }
+
+            // Cria uma nova linha para exibir os detalhes
+            var newRow = document.createElement('tr');
+            newRow.classList.add('details-row');
+            var newCell = document.createElement('td');
+            newCell.setAttribute('colspan', 3); // Ocupa as três colunas da tabela
+            newCell.innerHTML = `
+                <div class="reviewer-details">
+                    <h3>${nome}</h3>
+                    <p>Nome: ${nome}</p>
+                    <p>Email: ${email}</p>
+                    <p>Formação: ${formacao}</p>
+                </div>
+            `;
+            newRow.appendChild(newCell);
+
+            // Insere a nova linha logo abaixo da linha do botão clicado
+            button.closest('tr').insertAdjacentElement('afterend', newRow);
+        }
+    </script>
 </head>
 <body>
+<?php
+
+$con = new mysqli("localhost", "root", "", "evento");
+if ($con->connect_error) {
+    die("Conexão falhou: " . $con->connect_error);
+}
+
+$resultado = $con->query("SELECT nome, email, formacao FROM avaliadores ORDER BY nome");
+
+?>
     <header>
         <h1>SSRS - Sistema de Submissão de Resumos Simples</h1>
     </header>
@@ -21,16 +59,7 @@
         </div>
 
         <div class="actions">
-            <button class="btn-register">Cadastrar Avaliador</button>
-        </div>
-
-        <div class="reviewer-details">
-            <h3>Carlos Eduardo</h3>
-            <p>Nome: Carlos Eduardo dos Santos Lopes</p>
-            <p>Email: carlos@gmail.com</p>
-            <p>Idade: 20</p>
-            <p>Trabalhos Avaliados: 15</p>
-            <p>Telefone: 63 99999-9999</p>
+            <a class="btn-register" href="./cadastro.php">Cadastrar Avaliador</a>
         </div>
 
         <table>
@@ -39,46 +68,28 @@
                 <th>Nome</th>
                 <th>Ações</th>
             </tr>
+            <?php
+                $contador = 1;
+                while ($linha = $resultado->fetch_object()){
+                    // Pegando os valores do banco de dados
+                    $nome = $linha->nome;
+                    $email = $linha->email;
+                    $formacao = $linha->formacao;
+            ?>
             <tr>
-                <td>2</td>
-                <td>Jeová Igor</td>
+                <td><?=$contador?></td>
+                <td><?=$nome?></td>
                 <td>
+                    <!-- Passar os valores dinâmicos do banco de dados -->
+                    <button class="details-btn" onclick="mostrarDetalhes(this, '<?=$nome?>', '<?=$email?>', '<?=$formacao?>')">Ver Detalhes</button>
                     <button class="edit-btn">✏️</button>
                     <button class="delete-btn">🗑️</button>
                 </td>
             </tr>
-            <tr>
-                <td>3</td>
-                <td>Bob Charlton</td>
-                <td>
-                    <button class="edit-btn">✏️</button>
-                    <button class="delete-btn">🗑️</button>
-                </td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Bill Gates</td>
-                <td>
-                    <button class="edit-btn">✏️</button>
-                    <button class="delete-btn">🗑️</button>
-                </td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Lionel Messi</td>
-                <td>
-                    <button class="edit-btn">✏️</button>
-                    <button class="delete-btn">🗑️</button>
-                </td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Ronneesley</td>
-                <td>
-                    <button class="edit-btn">✏️</button>
-                    <button class="delete-btn">🗑️</button>
-                </td>
-            </tr>
+            <?php
+                $contador++;
+                }
+            ?>
         </table>
 
         <div class="pagination">
@@ -91,4 +102,3 @@
     </section>
 </body>
 </html>
-

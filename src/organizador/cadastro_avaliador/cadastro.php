@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="../../css/cadastro_avaliador.css">
 </head>
 <body>
-    <h1>Crie sua conta</h1>
+    <h1>Cadastro de Avaliador</h1>
 
-    <form method="post" action="inserir.php">
+    <form class="form" method="post" action="inserir.php">
         <label>Nome</label><br />
         <input type="text" name="nome" />
         <br />
