@@ -1,24 +1,94 @@
 <?php include_once '../verifica_sessao.php'; ?>
-<?php
 
-$conn = new mysqli("localhost", "root", "", "evento");
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSRS - Sistema de Submissão de Resumos Simples</title>
+    <link rel="stylesheet" href="../../ccs/listagem_avaliador.css">
+</head>
+<body>
+    <header>
+        <h1>SSRS - Sistema de Submissão de Resumos Simples</h1>
+    </header>
 
-$sql = "SELECT id, nome, email, senha, curso FROM avaliadores ORDER BY id";
-$result = $conn->query($sql);
+    <section class="container">
+        <h2>Listagem de Avaliadores</h2>
 
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar">
+        </div>
 
-if ($result->num_rows > 0) {
-    echo str_pad("ID", 5) . str_pad("Nome", 45) . str_pad("Email", 45) . str_pad("Senha", 32) . str_pad("Curso", 45) . PHP_EOL;
-    echo str_repeat("-", 105) . PHP_EOL;
+        <div class="actions">
+            <button class="btn-register">Cadastrar Avaliador</button>
+        </div>
 
-    while($row = $result->fetch_assoc()) {
-        echo str_pad($row["id"], 5);
-        echo str_pad($row["nome"], 45);
-        echo str_pad($row["email"], 45);
-        echo str_pad($row["senha"], 32);
-        echo str_pad($row["curso"], 45);
-        echo PHP_EOL;
-    }
-} 
-$conn->close();
-?>
+        <div class="reviewer-details">
+            <h3>Carlos Eduardo</h3>
+            <p>Nome: Carlos Eduardo dos Santos Lopes</p>
+            <p>Email: carlos@gmail.com</p>
+            <p>Idade: 20</p>
+            <p>Trabalhos Avaliados: 15</p>
+            <p>Telefone: 63 99999-9999</p>
+        </div>
+
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Ações</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jeová Igor</td>
+                <td>
+                    <button class="edit-btn">✏️</button>
+                    <button class="delete-btn">🗑️</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bob Charlton</td>
+                <td>
+                    <button class="edit-btn">✏️</button>
+                    <button class="delete-btn">🗑️</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bill Gates</td>
+                <td>
+                    <button class="edit-btn">✏️</button>
+                    <button class="delete-btn">🗑️</button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Lionel Messi</td>
+                <td>
+                    <button class="edit-btn">✏️</button>
+                    <button class="delete-btn">🗑️</button>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Ronneesley</td>
+                <td>
+                    <button class="edit-btn">✏️</button>
+                    <button class="delete-btn">🗑️</button>
+                </td>
+            </tr>
+        </table>
+
+        <div class="pagination">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <span>...</span>
+            <button>55</button>
+        </div>
+    </section>
+</body>
+</html>
+
