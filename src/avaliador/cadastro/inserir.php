@@ -18,4 +18,3 @@ $con->query("insert into avaliadores(nome, email, curso, formacao, senha, telefo
 echo "Avaliador salvo com sucesso!";
 $con->close();
 ?>
-?>
