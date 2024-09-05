@@ -7,7 +7,7 @@
     <title>SSRS - Sistema de Submissão de Resumos Simples</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="avaliador_cadastro.css">
-    <form class="form" method="post" action="inserir.php">
+    
 </head>
 
 <body>
@@ -28,7 +28,7 @@
         <div class="signup-form">
             <h2>Ainda não tem um cadastro?</h2>
             <h3>Cadastre-se agora mesmo!</h3>
-            <form action="cadastro.php" method="post">
+            <form action="inserir.php" method="post">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
