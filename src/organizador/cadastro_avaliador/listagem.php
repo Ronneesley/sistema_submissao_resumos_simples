@@ -1,3 +1,4 @@
+<?php include("../layout_superior.php") ?>
 <?php include_once '../verifica_sessao.php'; ?>
 
 <!DOCTYPE html>
@@ -47,9 +48,6 @@ if ($con->connect_error) {
 $resultado = $con->query("SELECT nome, email, formacao FROM avaliadores ORDER BY nome");
 
 ?>
-    <header>
-        <h1>SSRS - Sistema de Submissão de Resumos Simples</h1>
-    </header>
 
     <section class="container">
         <h2>Listagem de Avaliadores</h2>
@@ -102,3 +100,4 @@ $resultado = $con->query("SELECT nome, email, formacao FROM avaliadores ORDER BY
     </section>
 </body>
 </html>
+<?php include("../layout_inferior.php") ?>
