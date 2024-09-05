@@ -7,6 +7,7 @@
     <title>SSRS - Sistema de Submissão de Resumos Simples</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="avaliador_cadastro.css">
+    <form class="form" method="post" action="inserir.php">
 </head>
 
 <body>
