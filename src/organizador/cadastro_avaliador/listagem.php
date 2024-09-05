@@ -50,7 +50,7 @@ $resultado = $con->query("SELECT nome, email, formacao FROM avaliadores ORDER BY
 ?>
 
     <section class="container">
-        <h2>Listagem de Avaliadores</h2>
+        <h2 class="title">Listagem de Avaliadores</h2>
 
         <div class="search-container">
             <input type="text" placeholder="Pesquisar">

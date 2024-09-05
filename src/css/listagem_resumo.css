@@ -3,7 +3,6 @@
     src: url(../fontes/Inter_18pt-Bold.ttf);
 }
 body{
-    font-family: inter;
     background-color: #fff;
     margin: 0;
     max-height: 100vh;

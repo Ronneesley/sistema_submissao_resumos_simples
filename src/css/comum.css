@@ -4,13 +4,7 @@
 }
 
 body {
-    font-family: inter;
     margin: 0;
     padding: 0;
     background-color: #fff;
-}
-
-h2 {
-    color: #000;
-    font-size: 2em;
 }
