@@ -22,7 +22,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.title{
+.title {
     text-align: center;
 }
 
@@ -59,7 +59,7 @@ input[type="text"] {
     margin-bottom: 20px;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left; 
+    text-align: left;
 }
 
 table {
@@ -79,9 +79,18 @@ table td {
     vertical-align: middle;
 }
 
-td:last-child {
-    text-align: right;
+th:last-child {
+    text-align: left;
+    width: 150px; 
 }
+
+td:last-child {
+    text-align: left;
+    width: 150px;
+    display: flex; 
+    justify-content: flex-start; 
+}
+
 
 .edit-btn, .delete-btn, .details-btn {
     background-color: transparent;
@@ -89,7 +98,7 @@ td:last-child {
     font-size: 16px;
     cursor: pointer;
     padding: 5px;
-    margin-left: 5px;
+    margin-right: 5px; 
 }
 
 .pagination {
@@ -122,9 +131,11 @@ td:last-child {
     text-align: left;
 }
 
+
 @media (max-width: 768px) {
-    table td:last-child {
+    table td:last-child, table th:last-child {
         text-align: center;
+        width: auto; 
     }
 
     .actions {
