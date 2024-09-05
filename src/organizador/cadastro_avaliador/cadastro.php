@@ -20,6 +20,10 @@
         <input type="text" name="email" />
         <br />
 
+        <label>Telefone</label><br />
+        <input type="text" name="telefone" />
+        <br />
+
         <label>Curso</label><br />
         <select name="curso">
         <?php

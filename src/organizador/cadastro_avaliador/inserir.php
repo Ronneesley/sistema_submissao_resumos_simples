@@ -15,9 +15,10 @@ $con = new mysqli("localhost", "root", "", "evento");
 $con->query("insert into avaliadores(nome, email, curso, formacao, senha) 
     values('$nome', '$email', $curso, '$formacao', '$hashSenha')");
 
-$con->close();
+
 
 echo "Avaliador salvo com sucesso!";
+$con->close();
 ?>
 
 <?php include("../layout_inferior.php") ?>
