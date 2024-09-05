@@ -1,0 +1,15 @@
+Tabela organizadores: tebela intermediária "organizadores_eventos" criada
+
+Tabela autorias:
+- Como já existe a relação entre autor e resumo, e cada resumo estará vinculado a um evento, 
+não será necessário modificar a tabela autorias. Porém, ao consultar submissões de um autor 
+em eventos específicos, a relação será feita via a tabela resumos.
+
+Tabela avaliadores: tabela intermediária "avaliadores_eventos" criada
+
+Tabela avaliacoes:
+- Como os resumos já estarão associados a um evento via a FK na tabela resumos, 
+a tabela avaliacoes não precisa de modificações diretas para incluir um evento_id. 
+A relação entre avaliações e eventos será indireta, através dos resumos.
+
+Tabela eixos_tematicos: Adicinado "evento" FK, caso os eixos variem entre os eventos.
