@@ -79,7 +79,7 @@ $resultado = $con->query("SELECT nome, email, formacao FROM avaliadores ORDER BY
                 <td><?=$nome?></td>
                 <td>
                     <!-- Passar os valores dinâmicos do banco de dados -->
-                    <button class="details-btn" onclick="mostrarDetalhes(this, '<?=$nome?>', '<?=$email?>', '<?=$formacao?>')">Ver Detalhes</button>
+                    <button class="details-btn" onclick="mostrarDetalhes(this, '<?=$nome?>', '<?=$email?>', '<?=$formacao?>')">👁️</button>
                     <button class="edit-btn">✏️</button>
                     <button class="delete-btn">🗑️</button>
                 </td>
