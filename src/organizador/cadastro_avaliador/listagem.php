@@ -45,7 +45,7 @@ if ($con->connect_error) {
     die("Conexão falhou: " . $con->connect_error);
 }
 
-$resultado = $con->query("SELECT nome, email, formacao FROM avaliadores ORDER BY nome");
+$resultado = $con->query("SELECT id, nome, email, formacao FROM avaliadores ORDER BY nome");
 
 ?>
 
@@ -61,34 +61,48 @@ $resultado = $con->query("SELECT nome, email, formacao FROM avaliadores ORDER BY
         </div>
 
         <table>
-            <tr>
-                <th>#</th>
-                <th>Nome</th>
-                <th>Ações</th>
-            </tr>
-            <?php
-                $contador = 1;
-                while ($linha = $resultado->fetch_object()){
-                    // Pegando os valores do banco de dados
-                    $nome = $linha->nome;
-                    $email = $linha->email;
-                    $formacao = $linha->formacao;
-            ?>
-            <tr>
-                <td><?=$contador?></td>
-                <td><?=$nome?></td>
-                <td>
-                    <!-- Passar os valores dinâmicos do banco de dados -->
-                    <button class="details-btn" onclick="mostrarDetalhes(this, '<?=$nome?>', '<?=$email?>', '<?=$formacao?>')">👁️</button>
-                    <button class="edit-btn">✏️</button>
-                    <button class="delete-btn">🗑️</button>
-                </td>
-            </tr>
-            <?php
-                $contador++;
-                }
-            ?>
-        </table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+            $contador = 1;
+            while ($linha = $resultado->fetch_object()){
+                $nome = $linha->nome;
+                $email = $linha->email;
+                $formacao = $linha->formacao;
+                $id = isset($linha->id) ? $linha->id : '';
+        ?>
+        <tr>
+            <td><?=$contador?></td>
+            <td><?=$nome?></td>
+            <td>
+                <button class="details-btn" onclick="mostrarDetalhes(this, '<?=$nome?>', '<?=$email?>', '<?=$formacao?>')">👁️</button>
+                <a class="edit-btn" href="editar.php?id=<?=$id?>">✏️</a>
+                <button class="delete-btn">🗑️</button>
+            </td>
+        </tr>
+        <tr class="details-row" style="display: none;">
+            <td colspan="3">
+                <div class="reviewer-details">
+                    <h3><?=$nome?></h3>
+                    <p>Nome: <?=$nome?></p>
+                    <p>Email: <?=$email?></p>
+                    <p>Formação: <?=$formacao?></p>
+                </div>
+            </td>
+        </tr>
+        <?php
+            $contador++;
+            }
+        ?>
+    </tbody>
+</table>
+
 
         <div class="pagination">
             <button>1</button>

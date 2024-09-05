@@ -80,17 +80,14 @@ table td {
 }
 
 th:last-child {
-    text-align: left;
+    text-align: left; 
     width: 150px; 
 }
 
 td:last-child {
-    text-align: left;
+    text-align: left; 
     width: 150px;
-    display: flex; 
-    justify-content: flex-start; 
 }
-
 
 .edit-btn, .delete-btn, .details-btn {
     background-color: transparent;
@@ -98,7 +95,8 @@ td:last-child {
     font-size: 16px;
     cursor: pointer;
     padding: 5px;
-    margin-right: 5px; 
+    margin-left: 5px;
+    text-decoration: none;
 }
 
 .pagination {
@@ -118,6 +116,7 @@ td:last-child {
     background-color: #ccc;
 }
 
+
 .details-row td {
     text-align: left;
 }
@@ -130,7 +129,6 @@ td:last-child {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
-
 
 @media (max-width: 768px) {
     table td:last-child, table th:last-child {
