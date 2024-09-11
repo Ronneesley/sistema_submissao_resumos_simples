@@ -9,7 +9,7 @@
     <title>SSRS - Sistema de Submissão de Resumos Simples</title>
     <link rel="stylesheet" href="../../css/listagem_avaliador.css">
     <script>
-        function mostrarDetalhes(button, nome, email, formacao) {
+        function mostrarDetalhes(button, nome, email, formacao, telefone) {
             // Se já houver uma linha de detalhes, removê-la
             var existingDetailsRow = button.closest('tr').nextElementSibling;
             if (existingDetailsRow && existingDetailsRow.classList.contains('details-row')) {
@@ -21,13 +21,14 @@
             var newRow = document.createElement('tr');
             newRow.classList.add('details-row');
             var newCell = document.createElement('td');
-            newCell.setAttribute('colspan', 3); // Ocupa as três colunas da tabela
+            newCell.setAttribute('colspan', 4); // Ocupa as três colunas da tabela
             newCell.innerHTML = `
                 <div class="reviewer-details">
                     <h3>${nome}</h3>
                     <p>Nome: ${nome}</p>
                     <p>Email: ${email}</p>
                     <p>Formação: ${formacao}</p>
+                    <p>Telefone:${telefone}</p>
                 </div>
             `;
             newRow.appendChild(newCell);
@@ -45,7 +46,7 @@ if ($con->connect_error) {
     die("Conexão falhou: " . $con->connect_error);
 }
 
-$resultado = $con->query("SELECT id, nome, email, formacao FROM avaliadores ORDER BY nome");
+$resultado = $con->query("SELECT id, nome, email, formacao, telefone FROM avaliadores ORDER BY nome");
 
 ?>
 
@@ -75,13 +76,14 @@ $resultado = $con->query("SELECT id, nome, email, formacao FROM avaliadores ORDE
                 $nome = $linha->nome;
                 $email = $linha->email;
                 $formacao = $linha->formacao;
+                $telefone= $linha->telefone;
                 $id = isset($linha->id) ? $linha->id : '';
         ?>
         <tr>
             <td><?=$contador?></td>
             <td><?=$nome?></td>
             <td>
-                <button class="details-btn" onclick="mostrarDetalhes(this, '<?=$nome?>', '<?=$email?>', '<?=$formacao?>')">👁️</button>
+                <button class="details-btn" onclick="mostrarDetalhes(this, '<?=$nome?>', '<?=$email?>', '<?=$formacao?>', '<?=$telefone?>')">👁️</button>
                 <a class="edit-btn" href="editar.php?id=<?=$id?>">✏️</a>
                 <a class="delete-btn" href="excluir.php?id=<?=$id?>" onclick="return confirm('Você tem certeza que deseja excluir este avaliador?')">🗑️</a>
             </td>
@@ -93,6 +95,7 @@ $resultado = $con->query("SELECT id, nome, email, formacao FROM avaliadores ORDE
                     <p>Nome: <?=$nome?></p>
                     <p>Email: <?=$email?></p>
                     <p>Formação: <?=$formacao?></p>
+                    <p>Telefone: <?=$telefone?></p>
                 </div>
             </td>
         </tr>
