@@ -7,13 +7,39 @@ $resultado = $con->query("select * from cursos order by nome");
 
 ?>
 <link rel="stylesheet" href="../../css/listagem_curso.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 <h2>Listagem de Cursos</h2>
 
 <div class="filtro">
 
-    <input type="text" id="nome" placeholder="Pesquisar" required> 
+    <input type="text" id="nome" placeholder="Pesquisar" required autocomplete="off">
     <a href="./cadastro.php">Novo</a>
+    <div id="curso-lista"></div>
+    <script>
+        $(document).ready(function() {
+            
+            $("#nome").on("input", function() {
+                var query = $(this).val();
+                if (query.length > 1) {
+                    $.ajax({
+                        url: "buscar_cursos.php",
+                        method: "POST",
+                        data: { consulta: query },
+                        success: function(data) {
+                            $("#curso-lista").html(data);
+                        }
+                    });
+                } else {
+                    $("#curso-lista").html("");
+                }
+            });
+        });
+    </script>
+
+   
+   
 </div>
 
 <table class="listagem">
@@ -51,3 +77,4 @@ $resultado = $con->query("select * from cursos order by nome");
 ?>
 
 <?php include("../layout_inferior.php") ?>
+

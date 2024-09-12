@@ -11,6 +11,7 @@ input[type="text"] {
 }
 .filtro {
     width: 75%;
+    
 }
 .filtro a{
     padding: 12px;
@@ -19,6 +20,7 @@ input[type="text"] {
     text-decoration: none;
     border-radius: 10px;
     font-size: 12px;
+    
 }
 .filtro a:hover{
     background-color: #d9d9d9;
