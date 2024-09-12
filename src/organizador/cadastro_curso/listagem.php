@@ -19,10 +19,11 @@ $resultado = $stmt->get_result();
 <h2>Listagem de Cursos</h2>
 
 <div class="filtro">
-<a href="./cadastro.php">Novo</a>
+
     <form method="get" action="">
         <input type="text" name="filtro" placeholder="Pesquisar" value="<?= htmlspecialchars($filtro) ?>" required autocomplete="off">
-        <input type="submit" value="Pesquisar">
+        <input type="submit" value="Pesquisar">  
+        <a href="./cadastro.php">Novo</a>
     </form>
    
     <div id="curso-lista"></div>
