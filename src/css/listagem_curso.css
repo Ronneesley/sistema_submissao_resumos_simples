@@ -4,7 +4,7 @@
 input[type="text"] {
     padding: 10px;
     width: 80%;
-    max-width: 100%;
+    max-width: 100%; 
     margin: 5px;
     border: 1px solid #010326;
     border-radius: 10px;
@@ -12,7 +12,6 @@ input[type="text"] {
 }
 .filtro {
     width: 75%;
-    
 }
 .filtro a{
 
@@ -64,4 +63,12 @@ table.listagem a {
 }
 table.listagem a:hover {
     text-decoration: underline;
+}
+input[type="submit"]{
+    background-color: #010326;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 12px;
 }
