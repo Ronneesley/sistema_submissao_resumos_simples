@@ -9,7 +9,6 @@
         Cadastro de Eixo Tematico
     </a>
 
-
     <a href="../cadastro_evento" class="shortcut">
         <img src="../../imagens/evento.png" alt="Cadastro de Autores">
         Cadastro de Eventos
