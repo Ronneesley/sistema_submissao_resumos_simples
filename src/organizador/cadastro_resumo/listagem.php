@@ -13,13 +13,15 @@
 </head>
 <body>
 <?php
-// query("select * from resumos");
+$titulo = isset($_POST["titulo"]) ? $_POST["titulo"] : "";
+
 $con = new mysqli("localhost", "root", "", "evento");
 $query = "
     SELECT resumos.*, autores.nome AS autor_nome, avaliadores.nome AS avaliador_nome
     FROM resumos
     JOIN autores ON resumos.id = autores.id
-    JOIN avaliadores ON resumos.id = avaliadores.id";
+    JOIN avaliadores ON resumos.id = avaliadores.id 
+    where titulo like '$titulo%'";
 
 $resultado = $con->query($query);
 
@@ -30,19 +32,22 @@ $resultado = $con->query($query);
             <button class="login-button">Log In</button>
         </div>
         
-        <div class="filtrar">
-            <input type="text" placeholder="Buscar por título">
-            <input type="text" placeholder="Buscar por autor">
-            <input type="text" placeholder="Buscar por avaliador">
-            <select>
-                <option value="">Filtrar Status</option>
-                <option value="pendente">Pendente</option>
-                <option value="enviado">Enviado</option>
-                <option value="reprovado">Reprovado</option>
-                <option value="aprovado">Aprovado</option>
-            </select>
-            <button>Buscar</button>
-        </div>
+        <form method="post">
+            <div class="filtrar">
+                <input type="text" name="titulo" value="<?=$titulo?>" placeholder="Buscar por título">
+                <input type="text" placeholder="Buscar por autor">
+                <input type="text" placeholder="Buscar por avaliador">
+                <select>
+                    <option value="">Filtrar Status</option>
+                    <option value="pendente">Pendente</option>
+                    <option value="enviado">Enviado</option>
+                    <option value="reprovado">Reprovado</option>
+                    <option value="aprovado">Aprovado</option>
+                </select>
+                <button type="submit">Buscar</button>
+            </div>
+        </form>
+
         <div class="result">
             <h2>Resultado da Lista de Resumos a serem avaliados ou já avaliados</h2>
             <table>
