@@ -23,7 +23,7 @@
             <a href="../cadastro_resumo">Cadastro de Resumos</a>
             <a href="../logout.php">Sair</a>
         </div>
-
+        
         <div class="main-content">
             <div class="title">SSRS - Sistema de Submissão de Resumos Simples</div>
 

@@ -24,7 +24,6 @@ input[type="text"] {
     
 }
 .filtro a:hover{
-    background-color: #d9d9d9;
     cursor: pointer;
 }
 .table-wrapper{
@@ -71,4 +70,7 @@ input[type="submit"]{
     text-decoration: none;
     border-radius: 10px;
     font-size: 12px;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
 }
